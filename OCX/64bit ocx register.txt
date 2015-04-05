@@ -1,0 +1,20 @@
+We have just had the same problem and have now worked out how to do it. 
+You need to copy the MSCOMCT2.OCX file to c:\windows\sysWOW64 not c:\windows\system32. 
+You then can register it by running from the command prompt or run in the 
+start menu regsvr32 c:\windows\sysWOW64\mscomct2.ocx and it 
+should register although make sure that you run regsvr32 with administrator privileges.
+
+
+
+Hi, You need to put the MSCOMCT2.OCX in the same folder as your program.   Eg. if your program is in C:\MyApp folder, then put the MSCOMCT2.OCX file in C:\MyApp folder too.
+
+ 
+
+and create a shortcut and run  %systemroot%\SysWoW64\regsvr32.exe C:\MyApp\MSCOMCT2.OCX   as administrator.
+
+ 
+
+Explanation of Regsvr32 usage and error messages  http://support.microsoft.com/kb/249873
+
+
+
