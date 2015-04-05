@@ -1,0 +1,5 @@
+SET STEP ON 
+USE cust IN 0
+SELECT cust
+a="test + <<cust.schcode>>"
+?TEXTMERGE(a,.t.,"<<",">>")

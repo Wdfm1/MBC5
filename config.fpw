@@ -1,0 +1,6 @@
+title=Memory Book Company
+set path to c:\mbc5;m:\mbc5;m:\mbc5\appfiles
+mvcount=20000
+screen=off
+resource=Off
+REPORTBUILDER=FFBLDR.APP
