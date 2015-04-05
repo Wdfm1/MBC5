@@ -1,0 +1,18 @@
+*** Make sure we have the Holidays table available
+
+
+IF !USED( 'Holidays' )	
+  USE Holidays In 0
+  llUsed = .F.
+ELSE
+  llUsed = .T.
+ENDIF
+SELECT Holidays
+SET ORDER TO dHoliday
+local nodays
+nodays=calw*5 + cald
+deadlinecalresult=busdayssub(produtn.dedayout,nodays)
+calw=0
+cald=0
+thisform.pgfbase1.page1.tmrbase1.enabled=.t.
+thisform.refresh

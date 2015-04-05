@@ -1,0 +1,14 @@
+SELECT Cust.schname, Cust.schcode, Cust.schstate, Cust.origsour,;
+  Cust.contryear, Cust.initcont, Quotes.booktype, Produtn.kitrecvd,;
+  Produtn.cstat;
+ FROM ;
+     mbc!cust ;
+    LEFT OUTER JOIN mbc!quotes ;
+   ON  Cust.schcode = Quotes.schcode ;
+    INNER JOIN mbc!produtn ;
+   ON  Quotes.invno = Produtn.invno;
+ WHERE (  Cust.contryear <> "12";
+   AND  Cust.schstate IN ("DE","IL","MN","RI","VA","TX","WY","WA") );
+   AND  (  Cust.sourdate >= ( {^2011/07/01} );
+   OR  Cust.initcont >= ( {^2011/07/01} ) );
+ ORDER BY Cust.schstate
