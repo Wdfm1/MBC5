@@ -1,0 +1,70 @@
+
+	LICENSE INFO: This archive contains the font "Z:3of9 BarCode" 
+
+If you choose to use this font you must agree not to hold me responsible for any 
+loss or consequential damages of any kind.  (I can't imagine what damage a font 
+could do, but stranger things have happened.)  You can share or upload this font 
+as the spirit moves you, but you may not charge for it, and you must include this 
+message.  Please send me an email (bobz@serv.net) if you like it.  I'm open to 
+suggestions and constructive criticism.
+	
+
+	TIPS for using Code 39 and the 'Z:3of9 Barcode' font
+
+Code 39 is an alphanumeric bar code. It can encode numbers 0-9, the uppercase
+alphabet A-Z, SPACE, and the following symbols: - . * $ / % +
+
+The Z:3of9 Barcode font will allow you to print a 3 of 9 bar-code without leaving a 
+gap between lines.  This allows you to repeat your data on several lines to construct 
+and print barcodes as tall as you need them without the need to compensate 
+with nonstandard line spacing. In order to make things a bit easier on you, the 
+lowercase letters in Z: Three of 9 Barcode work the same as the uppercase, instead 
+of being non-printing characters. 
+
+Each Code 39 character is constructed of five bars and four spaces, for a
+total of nine elements. Three of these are always wider than the rest. That's
+where the name comes from: Code 39 a.k.a. 3 of 9 Barcode. The wide elements
+should be at least two times as wide as the narrow elements. They are 2.5
+times as wide in my font. I've printed my Z: Three of 9 Barcode font on a dot
+matrix and laser printers and read it with Intermec and Zebra Systems hardware.
+
+If your printed barcode font doesn't scan, there are a couple of things that
+may be holding you up. The first is the 'SPACE' character. Barcode readers need
+to have a printed SPACE character composed of bars and spaces, so it can
+be read like the barcoded letters, numbers and symbols. Unfortunately, the
+version of Fontographer I used is convinced that only humans read TrueType, 
+and therefore it will not allow the creation of a printable SPACE. 
+If you need to print a SPACE with Z: Three of 9 Barcode, use the TILDE
+character instead. It has the properly coded bars and spaces for the SPACE
+character. Unless you downloaded the Z: Three of 9 Barcode font recently, you
+will not have the TILDE-to-SPACE character substitution, and will need to
+download <a href="./zips/z3of9.zip">the corrected version</a> of the font.
+
+The second problem may come from trying to print and scan without following
+the Code 39 spec. Please note that your barcode reader is expecting a quiet space 
+and asterisks used as start/stop codes around your data. This means that Code 39 
+requires a leading quiet zone and the start character "*", followed by your data,
+then the stop character "*" and finally a trailing quiet zone. The encoded version
+of TEST123 thus becomes  *TEST123*
+Turnkey barcode systems and applications take care of this automatically,
+but when you're just printing a font you will you have to 'do-it-yourself,' or
+your barcode reader won't recognize your data.
+ 
+Problem three is a check digit, which should not be an issue in most situations
+since Code 39 is not required to include a check digit. However, there is a standard
+but optional checksum method that your specific application may require.
+To calculate checksums, sum the value of all data characters and divide by
+43. The remainder or 'modulus' becomes the checksum whick is inserted before
+the stop code. This is obviously trickier that inserting a couple of asterisks
+and some space into a report format if you've been asked to do a barcode project
+on a shoestring budget. You'll need to check the spec (linked at various
+sites below) to get the values and examples for checksum calculations, then
+tell your boss that the scope of your project has increased, meaning that you 
+need more time/money to make it work.
+
+The final problem may occur if you print your font too small. Windows is going to 
+take whatever font you have and try to map each character to the resolution of 
+your printer. Windows doesn't know or care that you're trying to create a character
+that will be recognized by a barcode reader, and may adjust the bar and space 
+widths of some characters in adverse ways if your print is too small.
+

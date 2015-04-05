@@ -1,0 +1,10 @@
+Setting environment for using Microsoft Visual Studio 2008 x86 tools.
+
+C:\Windows\system32>regasm D:\DotNetShipping\dotNETShipping\bin\Debug\dotNETShip
+ping.dll /unregister
+Microsoft (R) .NET Framework Assembly Registration Utility 2.0.50727.5420
+Copyright (C) Microsoft Corporation 1998-2004.  All rights reserved.
+
+Types un-registered successfully
+
+C:\Windows\system32>

@@ -1,0 +1,386 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>dotNETShipping</name>
+    </assembly>
+    <members>
+        <member name="T:dotNETShipping.ShippingProviders.FedExProvider">
+            <summary>
+            Provides rates from FedEx (Federal Express).
+            </summary>
+        </member>
+        <member name="T:dotNETShipping.ShippingProviders.AbstractShippingProvider">
+            <summary>
+            A base implementation of the <see cref="T:dotNETShipping.ShippingProviders.IShippingProvider"/> interface.
+            All provider-specific classes should inherit from this class.
+            </summary>
+        </member>
+        <member name="T:dotNETShipping.ShippingProviders.IShippingProvider">
+            <summary>
+            Defines a standard interface for all shipping providers.
+            </summary>
+        </member>
+        <member name="M:dotNETShipping.ShippingProviders.IShippingProvider.GetRates">
+            <summary>
+            Retrieves rates from the provider.
+            </summary>
+        </member>
+        <member name="M:dotNETShipping.ShippingProviders.IShippingProvider.GetTrackingActivity(System.String)">
+            <summary>
+            Retrieves package tracking activity from the provider
+            </summary>
+        </member>
+        <member name="P:dotNETShipping.ShippingProviders.IShippingProvider.Name">
+            <summary>
+            The name of the provider.
+            </summary>
+        </member>
+        <member name="P:dotNETShipping.ShippingProviders.IShippingProvider.ApplyDiscounts">
+            <summary>
+            Whether or not to apply discounts for the provider.
+            </summary>
+        </member>
+        <member name="P:dotNETShipping.ShippingProviders.IShippingProvider.Shipment">
+            <summary>
+            The shipment which contains rates from the provider after calling <see cref="M:dotNETShipping.ShippingProviders.IShippingProvider.GetRates"/>.
+            </summary>
+        </member>
+        <member name="M:dotNETShipping.ShippingProviders.FedExProvider.Subscribe(System.String,dotNETShipping.ShippingProviders.Contact,dotNETShipping.Address)">
+            <summary>
+            Subscribes an account number and returns a meter number.
+            </summary>
+            <param name="accountNumber">The FedEx account number to be subscribed.</param>
+            <param name="contact">The contact information of the person subscribing.</param>
+            <param name="address">The address information of the person subscribing.</param>
+            <returns>A meter number.</returns>
+            <remarks>
+            This method only needs to be called once for a given account number.<br/>
+            The returned meter number is then used when requesting rates or tracking information from FedEx.
+            </remarks>
+        </member>
+        <member name="T:dotNETShipping.Package">
+            <summary>
+            Summary description for Package.
+            </summary>
+        </member>
+        <member name="M:dotNETShipping.Package.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Decimal)">
+            <summary>
+            Creates a new package object.
+            </summary>
+            <param name="length">The length of the package, in inches.</param>
+            <param name="width">The width of the package, in inches.</param>
+            <param name="height">The height of the package, in inches.</param>
+            <param name="weight">The weight of the package, in pounds.</param>
+            <param name="insuredValue">The insured-value of the package, in dollars.</param>
+        </member>
+        <member name="M:dotNETShipping.Package.#ctor(System.Decimal,System.Decimal,System.Decimal,System.Decimal,System.Decimal)">
+            <summary>
+            Creates a new package object.
+            </summary>
+            <param name="length">The length of the package, in inches.</param>
+            <param name="width">The width of the package, in inches.</param>
+            <param name="height">The height of the package, in inches.</param>
+            <param name="weight">The weight of the package, in pounds.</param>
+            <param name="insuredValue">The insured-value of the package, in dollars.</param>
+        </member>
+        <member name="M:dotNETShipping.Package.#ctor(System.Decimal,System.Decimal,System.Decimal,System.Int32,System.Int32,System.Decimal)">
+            <summary>
+            Creates a new package object with pounds and ounces specified.
+            </summary>
+            <param name="length">The length of the package, in inches.</param>
+            <param name="width">The width of the package, in inches.</param>
+            <param name="height">The height of the package, in inches.</param>
+            <param name="pounds">Weight in pounds</param>
+            <param name="ounces">Weight in ounces, uses as in 8 pounds 5 ounces.</param>
+            <param name="insuredValue">The insured-value of the package, in dollars.</param>
+        </member>
+        <member name="T:dotNETShipping.TrackingActivity">
+            <summary>
+            Summary description for TrackingActivity.
+            </summary>
+        </member>
+        <member name="M:dotNETShipping.TrackingActivity.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Creates a new instance of the <see cref="T:dotNETShipping.TrackingActivity"/> class.
+            </summary>
+            <param name="trackingNumber">The tracking number of the package.</param>
+            <param name="statusDescription">The description of the activity status code.</param>
+            <param name="city">The city from the tracking activity.</param>
+            <param name="state">The state from the tracking activity.</param>
+            <param name="countryCode">The country code from the tracking activity.</param>
+            <param name="activityDate">The recorded date from the tracking activity.</param>
+            <param name="activityTime">The recorded time from the tracking activity.</param>
+        </member>
+        <member name="T:dotNETShipping.ShippingProviders.UPSProvider">
+            <summary>
+            Provides rates from UPS (United Parcel Service).
+            </summary>
+        </member>
+        <member name="T:dotNETShipping.Rate">
+            <summary>
+            Summary description for Rate.
+            </summary>
+        </member>
+        <member name="F:dotNETShipping.Rate.Provider">
+            <summary>
+            The <see cref="T:dotNETShipping.ShippingProviders.IShippingProvider"/> implementation which provided this rate.
+            </summary>
+        </member>
+        <member name="F:dotNETShipping.Rate.Name">
+            <summary>
+            The name of the rate, as specified by the provider.
+            </summary>
+        </member>
+        <member name="F:dotNETShipping.Rate.Description">
+            <summary>
+            A description of the rate, as specified by the provider.
+            </summary>
+        </member>
+        <member name="F:dotNETShipping.Rate.TotalCharges">
+            <summary>
+            The total cost of this rate.
+            </summary>
+        </member>
+        <member name="F:dotNETShipping.Rate.GuaranteedDelivery">
+            <summary>
+            The guaranteed date and time of delivery for this rate.
+            </summary>
+        </member>
+        <member name="M:dotNETShipping.Rate.#ctor(System.String,System.String,System.String,System.Decimal,System.DateTime)">
+            <summary>
+            Creates a new instance of the <see cref="T:dotNETShipping.Rate"/> class.
+            </summary>
+            <param name="provider">The name of the provider responsible for this rate.</param>
+            <param name="name">The name of the rate.</param>
+            <param name="description">A description of the rate.</param>
+            <param name="totalCharges">The total cost of this rate.</param>
+            <param name="delivery">The guaranteed date and time of delivery for this rate.</param>
+        </member>
+        <member name="T:dotNETShipping.Address">
+            <summary>
+            Summary description for Address.
+            </summary>
+        </member>
+        <member name="T:dotNETShipping.RateManager">
+            <summary>
+            Responsible for coordinating the retrieval of rates from the specified providers for a specified shipment.
+            </summary>
+        </member>
+        <member name="F:dotNETShipping.RateManager.DEFAULT_ApplyDiscounts">
+            <summary>
+            Default value for handling discounts is to apply them.
+            </summary>
+        </member>
+        <member name="M:dotNETShipping.RateManager.#ctor">
+            <summary>
+            Creates a new RateManager instance using the default for whether or not to apply discounts.
+            </summary>
+        </member>
+        <member name="M:dotNETShipping.RateManager.#ctor(System.Boolean)">
+            <summary>
+            Creates a new RateManager instance using the specified value for whether or not to apply discounts.
+            </summary>
+            <param name="applyDiscounts">Boolean value indicating whether or not to apply discounts. Default is defined by <see cref="F:dotNETShipping.RateManager.DEFAULT_ApplyDiscounts"/>.</param>
+        </member>
+        <member name="M:dotNETShipping.RateManager.AddProvider(dotNETShipping.ShippingProviders.IShippingProvider)">
+            <summary>
+            Adds the specified provider to be rated when <see cref="M:dotNETShipping.RateManager.GetRates(dotNETShipping.Address,dotNETShipping.Address,dotNETShipping.Package)"/> is called.
+            </summary>
+            <param name="provider">A provider-specific implementation of <see cref="T:dotNETShipping.ShippingProviders.IShippingProvider"/>.</param>
+        </member>
+        <member name="M:dotNETShipping.RateManager.GetRates(dotNETShipping.Address,dotNETShipping.Address,dotNETShipping.Package)">
+            <summary>
+            Retrieves rates for all of the specified providers using the specified address and package information.
+            </summary>
+            <param name="originAddress">An instance of <see cref="T:dotNETShipping.Address"/> specifying the origin of the shipment.</param>
+            <param name="destinationAddress">An instance of <see cref="T:dotNETShipping.Address"/> specifying the destination of the shipment.</param>
+            <param name="package">An instance of <see cref="T:dotNETShipping.Package"/> specifying the package to be rated.</param>
+            <returns>A <see cref="T:dotNETShipping.Shipment"/> instance containing all returned rates.</returns>
+        </member>
+        <member name="M:dotNETShipping.RateManager.GetRates(dotNETShipping.Address,dotNETShipping.Address,System.Collections.Generic.List{dotNETShipping.Package})">
+            <summary>
+            Retrieves rates for all of the specified providers using the specified address and packages information.
+            </summary>
+            <param name="originAddress">An instance of <see cref="T:dotNETShipping.Address"/> specifying the origin of the shipment.</param>
+            <param name="destinationAddress">An instance of <see cref="T:dotNETShipping.Address"/> specifying the destination of the shipment.</param>
+            <param name="packages">An instance of <see cref="!:PackageCollection"/> specifying the packages to be rated.</param>
+            <returns>A <see cref="T:dotNETShipping.Shipment"/> instance containing all returned rates.</returns>
+        </member>
+        <member name="T:dotNETShipping.Shipment">
+            <summary>
+            Summary description for Shipment.
+            </summary>
+        </member>
+        <member name="T:dotNETShipping.ShippingProviders.USPSProvider">
+            <summary>
+            Summary description for USPSProvider.
+            </summary>
+        </member>
+        <member name="M:dotNETShipping.ShippingProviders.USPSProvider.#ctor(System.String,System.String)">
+            <summary>
+            Creates an instance of the USPS API
+            </summary>
+            <param name="userID">Username</param>
+            <param name="password">Password</param>
+        </member>
+        <member name="M:dotNETShipping.ShippingProviders.USPSProvider.GetRates">
+            <summary>
+            Sends data to provider and gets the response
+            </summary>
+        </member>
+        <member name="M:dotNETShipping.ShippingProviders.USPSProvider.buildRequestMessage">
+            <summary>
+            Used to build the message to be sent to the providers API
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:dotNETShipping.ShippingProviders.USPSProvider.parseResponseMessage(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="response"></param>
+        </member>
+        <member name="M:dotNETShipping.ShippingProviders.USPSProvider.GetSize(System.Int32)">
+            <summary>
+            Returns the size of the package relative to the dimensions and weight
+            </summary>
+            <param name="PackageNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="T:dotNETShipping.ShippingProviders.USPSProvider.Services">
+            <summary>
+            Types of services provided
+            </summary>
+        </member>
+        <member name="F:dotNETShipping.ShippingProviders.USPSProvider.Services.Express">
+            <summary>
+            Next day delivery to many locations, guaranteed or your money back.
+            </summary>
+        </member>
+        <member name="F:dotNETShipping.ShippingProviders.USPSProvider.Services.FirstClass">
+            <summary>
+            Letters, envelopes, and small packages weighing 13 ounces or less.
+            </summary>
+        </member>
+        <member name="F:dotNETShipping.ShippingProviders.USPSProvider.Services.Priority">
+            <summary>
+            Cost effective delivery in an average of 2-3 days.
+            </summary>
+        </member>
+        <member name="F:dotNETShipping.ShippingProviders.USPSProvider.Services.Parcel">
+            <summary>
+            70lbs or less. Economical ground delivery service for mailing gifts and merchandise.
+            </summary>
+        </member>
+        <member name="F:dotNETShipping.ShippingProviders.USPSProvider.Services.BPM">
+            <summary>
+            15lbs or less. For permanently bound advertising, promotional, directory or editorial material.
+            </summary>
+        </member>
+        <member name="F:dotNETShipping.ShippingProviders.USPSProvider.Services.Library">
+            <summary>
+            Library materials.
+            </summary>
+        </member>
+        <member name="F:dotNETShipping.ShippingProviders.USPSProvider.Services.Media">
+            <summary>
+            70lbs or less. Send books, film, printed music, sound recordings and computer media.
+            </summary>
+        </member>
+        <member name="F:dotNETShipping.ShippingProviders.USPSProvider.Services.All">
+            <summary>
+            Displays rates for all service types within one simple request.
+            </summary>
+        </member>
+        <member name="T:dotNETShipping.ShippingProviders.USPSProvider.Containers">
+            <summary>
+            The types of containers USPS offers
+            </summary>
+        </member>
+        <member name="F:dotNETShipping.ShippingProviders.USPSProvider.Containers.None">
+            <summary>
+            For someone using their own package
+            </summary>
+        </member>
+        <member name="F:dotNETShipping.ShippingProviders.USPSProvider.Containers._ZeroDash_1093">
+            <summary>
+            Express Mail Box, 12.25 x 15.5 x
+            </summary>
+        </member>
+        <member name="F:dotNETShipping.ShippingProviders.USPSProvider.Containers._ZeroDash_1094">
+            <summary>
+            Express Mail Tube, 36 x 6
+            </summary>
+        </member>
+        <member name="F:dotNETShipping.ShippingProviders.USPSProvider.Containers.EP13A">
+            <summary>
+            Express Mail Cardboard Envelope, 12.5 x 9.5
+            </summary>
+        </member>
+        <member name="F:dotNETShipping.ShippingProviders.USPSProvider.Containers.EP13C">
+            <summary>
+            Express Mail Tyvek Envelope, 12.5 x 15.5
+            </summary>
+        </member>
+        <member name="F:dotNETShipping.ShippingProviders.USPSProvider.Containers.EP13F">
+            <summary>
+            Express Mail Flat Rate Envelope, 12.5 x 9.5
+            </summary>
+        </member>
+        <member name="F:dotNETShipping.ShippingProviders.USPSProvider.Containers._ZeroDash_1095">
+            <summary>
+            Priority Mail Box, 12.25 x 15.5 x 3
+            </summary>
+        </member>
+        <member name="F:dotNETShipping.ShippingProviders.USPSProvider.Containers._ZeroDash_1096">
+            <summary>
+            Priority Mail Video, 8.25 x 5.25 x 1.5
+            </summary>
+        </member>
+        <member name="F:dotNETShipping.ShippingProviders.USPSProvider.Containers._ZeroDash_1097">
+            <summary>
+            Priority Mail Box, 11.25 x 14 x 2.25
+            </summary>
+        </member>
+        <member name="F:dotNETShipping.ShippingProviders.USPSProvider.Containers._ZeroDash_1098">
+            <summary>
+            Priority Mail Tube, 6 x 38
+            </summary>
+        </member>
+        <member name="F:dotNETShipping.ShippingProviders.USPSProvider.Containers.EP14">
+            <summary>
+            Priority Mail Tyvek Envelope, 12.5 x 15.5
+            </summary>
+        </member>
+        <member name="F:dotNETShipping.ShippingProviders.USPSProvider.Containers.EP14F">
+            <summary>
+            Priority Mail Flat Rate Envelope, 12.5 x 9.5
+            </summary>
+        </member>
+        <member name="T:dotNETShipping.ShippingProviders.USPSProvider.Size">
+            <summary>
+            The package sizes USPS allows
+            </summary>
+        </member>
+        <member name="F:dotNETShipping.ShippingProviders.USPSProvider.Size.Regular">
+            <summary>
+            Package length plus girth must equal 84 inches or less
+            </summary>
+        </member>
+        <member name="F:dotNETShipping.ShippingProviders.USPSProvider.Size.Large">
+            <summary>
+            Parcels that weigh less than 15 pounds but measure more than 84 inches but less than 108 inches
+            </summary>
+        </member>
+        <member name="F:dotNETShipping.ShippingProviders.USPSProvider.Size.Oversize">
+            <summary>
+            Parcel Post packages that measure more than 108 inches but not more than 130 inches
+            </summary>
+        </member>
+        <member name="T:dotNETShipping.ShippingProviders.AirborneProvider">
+            <summary>
+            Provides rates from Airborne Express.
+            </summary>
+        </member>
+    </members>
+</doc>
