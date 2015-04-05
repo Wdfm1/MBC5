@@ -1,0 +1,19 @@
+USE cust IN 0
+SELECT cust
+a=0
+SCAN
+DO case
+CASE INLIST(cust.schstate,"SC")
+replace cust.csrep WITH "TB"
+TABLEUPDATE(.t.,.t.)
+CASE INLIST(cust.schstate,"SD","HI","KS")
+replace cust.csrep WITH "JJ"
+TABLEUPDATE(.t.,.t.)
+CASE INLIST(cust.schstate,"VT")
+replace cust.csrep WITH "DC"
+TABLEUPDATE(.t.,.t.)
+endcase
+a=a+1
+WAIT NOWAIT WINDOW STR(a)
+ENDSCAN
+use

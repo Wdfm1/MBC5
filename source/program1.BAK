@@ -1,0 +1,10 @@
+
+SET STEP ON 
+a=1
+DO case
+CASE ISNULL(a) OR a=<0
+MESSAGEBOX("null")
+CASE a>0
+MESSAGEBOX("notnull")
+endcase
+

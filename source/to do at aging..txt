@@ -1,0 +1,2 @@
+take out exception for schcodes in updatemysqlschoolinvoice of sales screen.
+code is at top of page.

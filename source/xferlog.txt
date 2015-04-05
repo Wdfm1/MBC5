@@ -1,0 +1,281 @@
+sending bkoptn.scx as bkoptn.scx (1 of 1)
+TYPE I
+200 Type set to I.
+PASV
+227 Entering Passive Mode (71,51,192,122,17,132).
+connecting to 71.51.192.122:4484
+- -
+connecting to 71.51.192.122:4484
+Connected to 71.51.192.122 port 4484
+STOR bkoptn.scx
+125 Data connection already open; Transfer starting.
+! Failed to open file bkoptn.scx (2)
+226 Transfer complete.
+PWD
+257 "/" is current directory.
+TYPE A
+200 Type set to A.
+PASV
+227 Entering Passive Mode (71,51,192,122,17,133).
+connecting to 71.51.192.122:4485
+- -
+connecting to 71.51.192.122:4485
+Connected to 71.51.192.122 port 4485
+LIST
+125 Data connection already open; Transfer starting.
+Received 1255 bytes in 0.1 secs, (120.00 Kbps), transfer succeeded
+226 Transfer complete.
+sending bkoptn.SCT as bkoptn.SCT (1 of 1)
+TYPE I
+200 Type set to I.
+PASV
+227 Entering Passive Mode (71,51,192,122,17,134).
+connecting to 71.51.192.122:4486
+- -
+connecting to 71.51.192.122:4486
+Connected to 71.51.192.122 port 4486
+STOR bkoptn.SCT
+125 Data connection already open; Transfer starting.
+! Failed to open file bkoptn.SCT (2)
+226 Transfer complete.
+PWD
+257 "/" is current directory.
+TYPE A
+200 Type set to A.
+PASV
+227 Entering Passive Mode (71,51,192,122,17,135).
+connecting to 71.51.192.122:4487
+- -
+connecting to 71.51.192.122:4487
+Connected to 71.51.192.122 port 4487
+LIST
+125 Data connection already open; Transfer starting.
+Received 1306 bytes in 0.1 secs, (120.00 Kbps), transfer succeeded
+226 Transfer complete.
+sending bkoptn.scx as bkoptn.scx (1 of 1)
+TYPE I
+421 Timeout (120 seconds): closing control connection.
+PASV
+421 Terminating connection.
+PORT 0,0,0,0,10,144
+! Send error: connection aborted
+! Receive error: connection aborted
+
+! Failed "port":
+sending bkoptn.scx as bkoptn.scx (1 of 1)
+PASV
+! Send error: connection aborted
+! Receive error: connection aborted
+
+PORT 0,0,0,0,10,148
+! Send error: connection aborted
+! Receive error: connection aborted
+
+! Failed "port":
+sending bkoptn.SCT as bkoptn.SCT (1 of 1)
+PASV
+! Send error: connection aborted
+! Receive error: connection aborted
+
+PORT 0,0,0,0,10,149
+! Send error: connection aborted
+! Receive error: connection aborted
+
+! Failed "port":
+PWD
+! Send error: connection aborted
+! Receive error: connection aborted
+
+TYPE A
+! Send error: connection aborted
+! Receive error: connection aborted
+
+PASV
+! Send error: connection aborted
+! Receive error: connection aborted
+
+PORT 0,0,0,0,10,150
+! Send error: connection aborted
+! Receive error: connection aborted
+
+! Failed "port":
+! Retrieve of folder listing failed (0)
+QUIT
+! Send error: connection aborted
+! Receive error: connection aborted
+
+- -
+! Can't get "ftp://wdalrarm.homeip.net" host entry
+! Connection failed ftp://wdalrarm.homeip.net
+sending bkoptn.scx as bkoptn.scx (1 of 1)
+TYPE I
+200 Type set to I.
+PASV
+227 Entering Passive Mode (71,51,192,122,17,163).
+connecting to 71.51.192.122:4515
+- -
+connecting to 71.51.192.122:4515
+Connected to 71.51.192.122 port 4515
+STOR bkoptn.scx
+125 Data connection already open; Transfer starting.
+Transmitted 4303 bytes in 0.1 secs, (420.00 Kbps), transfer succeeded
+226 Transfer complete.
+MDTM 20090704155257 bkoptn.scx
+550 20090704155257 bkoptn.scx: The system cannot find the file specified.
+PWD
+257 "/" is current directory.
+TYPE A
+200 Type set to A.
+PASV
+227 Entering Passive Mode (71,51,192,122,17,164).
+connecting to 71.51.192.122:4516
+- -
+connecting to 71.51.192.122:4516
+Connected to 71.51.192.122 port 4516
+LIST
+125 Data connection already open; Transfer starting.
+Received 1306 bytes in 0.1 secs, (120.00 Kbps), transfer succeeded
+226 Transfer complete.
+sending bkoptn.SCT as bkoptn.SCT (1 of 1)
+TYPE I
+200 Type set to I.
+PASV
+227 Entering Passive Mode (71,51,192,122,17,165).
+connecting to 71.51.192.122:4517
+- -
+connecting to 71.51.192.122:4517
+Connected to 71.51.192.122 port 4517
+STOR bkoptn.SCT
+125 Data connection already open; Transfer starting.
+Transmitted 7377 bytes in 0.1 secs, (720.00 Kbps), transfer succeeded
+226 Transfer complete.
+PWD
+257 "/" is current directory.
+TYPE A
+200 Type set to A.
+PASV
+227 Entering Passive Mode (71,51,192,122,17,166).
+connecting to 71.51.192.122:4518
+- -
+connecting to 71.51.192.122:4518
+Connected to 71.51.192.122 port 4518
+LIST
+125 Data connection already open; Transfer starting.
+Received 1306 bytes in 0.1 secs, (120.00 Kbps), transfer succeeded
+226 Transfer complete.
+QUIT
+221
+CWD ToRandy
+250 CWD command successful.
+PWD
+257 "/ToRandy" is current directory.
+PASV
+227 Entering Passive Mode (71,51,198,253,16,209).
+connecting to 71.51.198.253:4305
+- -
+connecting to 71.51.198.253:4305
+Connected to 71.51.198.253 port 4305
+LIST
+125 Data connection already open; Transfer starting.
+Received 253 bytes in 0.1 secs, (20.00 Kbps), transfer succeeded
+226 Transfer complete.
+sending productn.scx as productn.scx (1 of 2)
+TYPE I
+200 Type set to I.
+PASV
+227 Entering Passive Mode (71,51,198,253,16,213).
+connecting to 71.51.198.253:4309
+- -
+connecting to 71.51.198.253:4309
+Connected to 71.51.198.253 port 4309
+STOR productn.scx
+125 Data connection already open; Transfer starting.
+Transmitted 270590 bytes in 3.8 secs, (704.20 Kbps), transfer succeeded
+226 Transfer complete.
+MDTM 20090729232525 productn.scx
+550 20090729232525 productn.scx: The system cannot find the file specified.
+sending productn.SCT as productn.SCT (2 of 2)
+PASV
+227 Entering Passive Mode (71,51,198,253,16,214).
+connecting to 71.51.198.253:4310
+- -
+connecting to 71.51.198.253:4310
+Connected to 71.51.198.253 port 4310
+STOR productn.SCT
+125 Data connection already open; Transfer starting.
+Transmitted 1179026 bytes in 16.5 secs, (699.87 Kbps), transfer succeeded
+226 Transfer complete.
+PWD
+257 "/ToRandy" is current directory.
+TYPE A
+200 Type set to A.
+PASV
+227 Entering Passive Mode (71,51,198,253,16,215).
+connecting to 71.51.198.253:4311
+- -
+connecting to 71.51.198.253:4311
+Connected to 71.51.198.253 port 4311
+LIST
+125 Data connection already open; Transfer starting.
+Received 359 bytes in 0.1 secs, (30.00 Kbps), transfer succeeded
+226 Transfer complete.
+QUIT
+221
+sending schools.SCT as schools.SCT (1 of 1)
+TYPE I
+200 Type set to I.
+PASV
+227 Entering Passive Mode (71,51,198,253,15,180).
+connecting to 71.51.198.253:4020
+- -
+connecting to 71.51.198.253:4020
+Connected to 71.51.198.253 port 4020
+STOR schools.SCT
+125 Data connection already open; Transfer starting.
+Transmitted 203651 bytes in 2.7 secs, (730.07 Kbps), transfer succeeded
+226 Transfer complete.
+MDTM 20090902160106 schools.SCT
+550 20090902160106 schools.SCT: The system cannot find the file specified.
+PWD
+257 "/ToRandy" is current directory.
+TYPE A
+200 Type set to A.
+PASV
+227 Entering Passive Mode (71,51,198,253,15,181).
+connecting to 71.51.198.253:4021
+- -
+connecting to 71.51.198.253:4021
+Connected to 71.51.198.253 port 4021
+LIST
+125 Data connection already open; Transfer starting.
+Received 234 bytes in 0.1 secs, (20.00 Kbps), transfer succeeded
+226 Transfer complete.
+sending schools.scx as schools.scx (1 of 1)
+TYPE I
+200 Type set to I.
+PASV
+227 Entering Passive Mode (71,51,198,253,15,182).
+connecting to 71.51.198.253:4022
+- -
+connecting to 71.51.198.253:4022
+Connected to 71.51.198.253 port 4022
+STOR schools.scx
+125 Data connection already open; Transfer starting.
+Transmitted 41690 bytes in 0.5 secs, (814.00 Kbps), transfer succeeded
+226 Transfer complete.
+PWD
+257 "/ToRandy" is current directory.
+TYPE A
+200 Type set to A.
+PASV
+227 Entering Passive Mode (71,51,198,253,15,183).
+connecting to 71.51.198.253:4023
+- -
+connecting to 71.51.198.253:4023
+Connected to 71.51.198.253 port 4023
+LIST
+125 Data connection already open; Transfer starting.
+Received 286 bytes in 0.1 secs, (20.00 Kbps), transfer succeeded
+226 Transfer complete.
+QUIT
+221

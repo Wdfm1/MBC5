@@ -1,0 +1,38 @@
+IF USED("cust")
+SELECT cust
+else
+USE cust IN 0
+SELECT cust
+ENDIF
+SET STEP ON 
+TRY
+		nConnectionHandle = SQLStringConnect( "DRIVER={MySQL ODBC 5.1 Driver};DESC=;DATABASE=mbc;SERVER=192.168.1.101;UID=root;PASSWORD=3l3phant1;PORT=;OPTION=16;STMT=;" )
+*nConnectionHandle = SQLStringConnect( "DRIVER={MySQL ODBC 5.1 Driver};DESC=;DATABASE=mbc;SERVER=databases;UID=root;PASSWORD=3l3phant1;PORT=;OPTION=16;STMT=;" )
+	
+	CATCH
+	MESSAGEBOX("bad connection")
+return
+ENDTRY
+b=0
+SCAN FOR cust.contryear="15"
+
+SCATTER memvar
+
+IF nConnectionHandle>0 &&connection good
+TRY
+cstring='update cust set schname="'+ALLTRIM(m.schname)+'",schaddr="'+m.schaddr+'",schaddr2="'+m.schaddr2+'",schcity="'+ALLTRIM(m.schcity)+'",schstate="'+ALLTRIM(m.schstate) +'",schzip="'+ m.schzip+'",schphone="'+m.schphone +'",schfax="'+m.schfax + '",yr="'+m.contryear + '" where schcode="'+ALLTRIM(m.schcode)+'";'
+	a=SQLEXEC(nConnectionHandle,'update cust set schname="'+ALLTRIM(m.schname)+'",schaddr="'+m.schaddr+'",schaddr2="'+m.schaddr2+'",schcity="'+ALLTRIM(m.schcity)+'",schstate="'+ALLTRIM(m.schstate) +'",schzip="'+ m.schzip+'",schphone="'+m.schphone +'",schfax="'+m.schfax + '",yr="'+m.contryear + '" where schcode="'+ALLTRIM(m.schcode)+'";')
+
+b=b+1
+WAIT NOWAIT WINDOW STR(b)
+
+CATCH
+	
+ENDTRY
+ELSE
+MESSAGEBOX("bad connection")
+return
+ENDIF
+ENDSCAN
+SQLDISCONNECT(nConnectionHandle)
+WAIT WINDOW STR(a)

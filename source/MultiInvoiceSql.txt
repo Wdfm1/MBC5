@@ -1,0 +1,8 @@
+SELECT Produtn.shpdate, Invoice.schname, Invoice.schcode, Invoice.invno,;
+  Invoice.qtedate, Invoice.payments, Invoice.baldue, Cust.schemail,;
+  Cust.contfname, Cust.contlname, Cust.contemail, .T.;
+ FROM  mbc!produtn LEFT OUTER JOIN mbc!invoice;
+    LEFT OUTER JOIN mbc!cust ;
+   ON  Invoice.schcode = Cust.schcode ;
+   ON  Produtn.invno = Invoice.invno;
+ WHERE Produtn.shpdate = CTOD("10/27/2009")

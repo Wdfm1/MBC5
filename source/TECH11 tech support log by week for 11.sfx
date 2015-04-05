@@ -1,0 +1,416 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<report>
+		<rectype>R</rectype>
+		<name>TECH11 tech support log by week for 11</name>
+		<reportfile/>
+		<reportcls>sfreportquick</reportcls>
+		<reportlib>sfreports.vcx</reportlib>
+		<folders>Main Reports</folders>
+		<datagroup/>
+		<stdfilt/>
+		<allowfilt>true</allowfilt>
+		<allowsort>true</allowsort>
+		<sort>&lt;sortfields&gt;
+		&lt;sortfield&gt;
+			&lt;fieldname&gt;CUST.SCHCODE&lt;/fieldname&gt;
+			&lt;ascending&gt;true&lt;/ascending&gt;
+			&lt;group&gt;true&lt;/group&gt;
+			&lt;order&gt;1&lt;/order&gt;
+		&lt;/sortfield&gt;
+	&lt;/sortfields&gt;</sort>
+		<fields>&lt;fields&gt;
+	&lt;field&gt;
+		&lt;fieldname&gt;DATECONT.INITIAL&lt;/fieldname&gt;
+		&lt;heading&gt;Initials&lt;/heading&gt;
+		&lt;order&gt;1&lt;/order&gt;
+		&lt;width&gt;8&lt;/width&gt;
+		&lt;fontbold&gt;false&lt;/fontbold&gt;
+		&lt;fontitalic&gt;false&lt;/fontitalic&gt;
+		&lt;fontunderline&gt;false&lt;/fontunderline&gt;
+		&lt;alignment&gt;0&lt;/alignment&gt;
+		&lt;format/&gt;
+		&lt;inputmask/&gt;
+		&lt;hposition&gt;-1&lt;/hposition&gt;
+		&lt;vposition&gt;-1&lt;/vposition&gt;
+		&lt;group&gt;0&lt;/group&gt;
+		&lt;chart&gt;99&lt;/chart&gt;
+		&lt;chartorder&gt;0&lt;/chartorder&gt;
+		&lt;chartinputmask/&gt;
+		&lt;chartformat/&gt;
+		&lt;totaltype&gt;N&lt;/totaltype&gt;
+		&lt;charttotaltype&gt;N&lt;/charttotaltype&gt;
+		&lt;forecolor&gt;-1&lt;/forecolor&gt;
+		&lt;backcolor&gt;-1&lt;/backcolor&gt;
+		&lt;suppress&gt;false&lt;/suppress&gt;
+		&lt;groupcount&gt;false&lt;/groupcount&gt;
+		&lt;fontname/&gt;
+		&lt;fontsize&gt;0&lt;/fontsize&gt;
+		&lt;autofit&gt;true&lt;/autofit&gt;
+		&lt;newpage&gt;false&lt;/newpage&gt;
+		&lt;resetpage&gt;false&lt;/resetpage&gt;
+		&lt;descending&gt;false&lt;/descending&gt;
+		&lt;includeallfields&gt;false&lt;/includeallfields&gt;
+		&lt;aliascaption&gt;Datecont&lt;/aliascaption&gt;
+		&lt;bookmark&gt;false&lt;/bookmark&gt;
+		&lt;datatrim&gt;1&lt;/datatrim&gt;
+		&lt;memberdata/&gt;
+		&lt;usedefaultformat&gt;true&lt;/usedefaultformat&gt;
+		&lt;usedefaultformatchart&gt;true&lt;/usedefaultformatchart&gt;
+		&lt;groupononeline&gt;false&lt;/groupononeline&gt;
+		&lt;nototalsforonerecord&gt;false&lt;/nototalsforonerecord&gt;
+		&lt;showpercent&gt;false&lt;/showpercent&gt;
+		&lt;appview/&gt;
+		&lt;showchange&gt;false&lt;/showchange&gt;
+		&lt;showchangeamt&gt;false&lt;/showchangeamt&gt;
+	&lt;/field&gt;
+	&lt;field&gt;
+		&lt;fieldname&gt;CUST.SCHCODE&lt;/fieldname&gt;
+		&lt;heading&gt;School Code&lt;/heading&gt;
+		&lt;order&gt;2&lt;/order&gt;
+		&lt;width&gt;6&lt;/width&gt;
+		&lt;fontbold&gt;false&lt;/fontbold&gt;
+		&lt;fontitalic&gt;false&lt;/fontitalic&gt;
+		&lt;fontunderline&gt;false&lt;/fontunderline&gt;
+		&lt;alignment&gt;0&lt;/alignment&gt;
+		&lt;format/&gt;
+		&lt;inputmask/&gt;
+		&lt;hposition&gt;-1&lt;/hposition&gt;
+		&lt;vposition&gt;-1&lt;/vposition&gt;
+		&lt;group&gt;1&lt;/group&gt;
+		&lt;chart&gt;99&lt;/chart&gt;
+		&lt;chartorder&gt;0&lt;/chartorder&gt;
+		&lt;chartinputmask/&gt;
+		&lt;chartformat/&gt;
+		&lt;totaltype&gt;N&lt;/totaltype&gt;
+		&lt;charttotaltype&gt;N&lt;/charttotaltype&gt;
+		&lt;forecolor&gt;-1&lt;/forecolor&gt;
+		&lt;backcolor&gt;-1&lt;/backcolor&gt;
+		&lt;suppress&gt;false&lt;/suppress&gt;
+		&lt;groupcount&gt;false&lt;/groupcount&gt;
+		&lt;fontname/&gt;
+		&lt;fontsize&gt;0&lt;/fontsize&gt;
+		&lt;autofit&gt;true&lt;/autofit&gt;
+		&lt;newpage&gt;false&lt;/newpage&gt;
+		&lt;resetpage&gt;false&lt;/resetpage&gt;
+		&lt;descending&gt;false&lt;/descending&gt;
+		&lt;includeallfields&gt;false&lt;/includeallfields&gt;
+		&lt;aliascaption&gt;Cust&lt;/aliascaption&gt;
+		&lt;bookmark&gt;false&lt;/bookmark&gt;
+		&lt;datatrim&gt;1&lt;/datatrim&gt;
+		&lt;memberdata/&gt;
+		&lt;usedefaultformat&gt;true&lt;/usedefaultformat&gt;
+		&lt;usedefaultformatchart&gt;true&lt;/usedefaultformatchart&gt;
+		&lt;groupononeline&gt;false&lt;/groupononeline&gt;
+		&lt;nototalsforonerecord&gt;false&lt;/nototalsforonerecord&gt;
+		&lt;showpercent&gt;false&lt;/showpercent&gt;
+		&lt;appview/&gt;
+		&lt;showchange&gt;false&lt;/showchange&gt;
+		&lt;showchangeamt&gt;false&lt;/showchangeamt&gt;
+	&lt;/field&gt;
+	&lt;field&gt;
+		&lt;fieldname&gt;DATECONT.REASON&lt;/fieldname&gt;
+		&lt;heading&gt;Reason&lt;/heading&gt;
+		&lt;order&gt;3&lt;/order&gt;
+		&lt;width&gt;100&lt;/width&gt;
+		&lt;fontbold&gt;false&lt;/fontbold&gt;
+		&lt;fontitalic&gt;false&lt;/fontitalic&gt;
+		&lt;fontunderline&gt;false&lt;/fontunderline&gt;
+		&lt;alignment&gt;0&lt;/alignment&gt;
+		&lt;format/&gt;
+		&lt;inputmask/&gt;
+		&lt;hposition&gt;-1&lt;/hposition&gt;
+		&lt;vposition&gt;-1&lt;/vposition&gt;
+		&lt;group&gt;0&lt;/group&gt;
+		&lt;chart&gt;99&lt;/chart&gt;
+		&lt;chartorder&gt;0&lt;/chartorder&gt;
+		&lt;chartinputmask/&gt;
+		&lt;chartformat/&gt;
+		&lt;totaltype&gt;N&lt;/totaltype&gt;
+		&lt;charttotaltype&gt;N&lt;/charttotaltype&gt;
+		&lt;forecolor&gt;-1&lt;/forecolor&gt;
+		&lt;backcolor&gt;-1&lt;/backcolor&gt;
+		&lt;suppress&gt;false&lt;/suppress&gt;
+		&lt;groupcount&gt;false&lt;/groupcount&gt;
+		&lt;fontname/&gt;
+		&lt;fontsize&gt;0&lt;/fontsize&gt;
+		&lt;autofit&gt;true&lt;/autofit&gt;
+		&lt;newpage&gt;false&lt;/newpage&gt;
+		&lt;resetpage&gt;false&lt;/resetpage&gt;
+		&lt;descending&gt;false&lt;/descending&gt;
+		&lt;includeallfields&gt;false&lt;/includeallfields&gt;
+		&lt;aliascaption&gt;Datecont&lt;/aliascaption&gt;
+		&lt;bookmark&gt;false&lt;/bookmark&gt;
+		&lt;datatrim&gt;1&lt;/datatrim&gt;
+		&lt;memberdata/&gt;
+		&lt;usedefaultformat&gt;true&lt;/usedefaultformat&gt;
+		&lt;usedefaultformatchart&gt;true&lt;/usedefaultformatchart&gt;
+		&lt;groupononeline&gt;false&lt;/groupononeline&gt;
+		&lt;nototalsforonerecord&gt;false&lt;/nototalsforonerecord&gt;
+		&lt;showpercent&gt;false&lt;/showpercent&gt;
+		&lt;appview/&gt;
+		&lt;showchange&gt;false&lt;/showchange&gt;
+		&lt;showchangeamt&gt;false&lt;/showchangeamt&gt;
+	&lt;/field&gt;
+	&lt;field&gt;
+		&lt;fieldname&gt;CUST.SCHSTATE&lt;/fieldname&gt;
+		&lt;heading&gt;School State&lt;/heading&gt;
+		&lt;order&gt;4&lt;/order&gt;
+		&lt;width&gt;6&lt;/width&gt;
+		&lt;fontbold&gt;false&lt;/fontbold&gt;
+		&lt;fontitalic&gt;false&lt;/fontitalic&gt;
+		&lt;fontunderline&gt;false&lt;/fontunderline&gt;
+		&lt;alignment&gt;0&lt;/alignment&gt;
+		&lt;format/&gt;
+		&lt;inputmask/&gt;
+		&lt;hposition&gt;-1&lt;/hposition&gt;
+		&lt;vposition&gt;-1&lt;/vposition&gt;
+		&lt;group&gt;0&lt;/group&gt;
+		&lt;chart&gt;99&lt;/chart&gt;
+		&lt;chartorder&gt;0&lt;/chartorder&gt;
+		&lt;chartinputmask/&gt;
+		&lt;chartformat/&gt;
+		&lt;totaltype&gt;N&lt;/totaltype&gt;
+		&lt;charttotaltype&gt;N&lt;/charttotaltype&gt;
+		&lt;forecolor&gt;-1&lt;/forecolor&gt;
+		&lt;backcolor&gt;-1&lt;/backcolor&gt;
+		&lt;suppress&gt;false&lt;/suppress&gt;
+		&lt;groupcount&gt;false&lt;/groupcount&gt;
+		&lt;fontname/&gt;
+		&lt;fontsize&gt;0&lt;/fontsize&gt;
+		&lt;autofit&gt;true&lt;/autofit&gt;
+		&lt;newpage&gt;false&lt;/newpage&gt;
+		&lt;resetpage&gt;false&lt;/resetpage&gt;
+		&lt;descending&gt;false&lt;/descending&gt;
+		&lt;includeallfields&gt;false&lt;/includeallfields&gt;
+		&lt;aliascaption&gt;Cust&lt;/aliascaption&gt;
+		&lt;bookmark&gt;false&lt;/bookmark&gt;
+		&lt;datatrim&gt;1&lt;/datatrim&gt;
+		&lt;memberdata/&gt;
+		&lt;usedefaultformat&gt;true&lt;/usedefaultformat&gt;
+		&lt;usedefaultformatchart&gt;true&lt;/usedefaultformatchart&gt;
+		&lt;groupononeline&gt;false&lt;/groupononeline&gt;
+		&lt;nototalsforonerecord&gt;false&lt;/nototalsforonerecord&gt;
+		&lt;showpercent&gt;false&lt;/showpercent&gt;
+		&lt;appview/&gt;
+		&lt;showchange&gt;false&lt;/showchange&gt;
+		&lt;showchangeamt&gt;false&lt;/showchangeamt&gt;
+	&lt;/field&gt;
+	&lt;field&gt;
+		&lt;fieldname&gt;DATECONT.TYPECONT&lt;/fieldname&gt;
+		&lt;heading&gt;Type Contact&lt;/heading&gt;
+		&lt;order&gt;5&lt;/order&gt;
+		&lt;width&gt;21&lt;/width&gt;
+		&lt;fontbold&gt;false&lt;/fontbold&gt;
+		&lt;fontitalic&gt;false&lt;/fontitalic&gt;
+		&lt;fontunderline&gt;false&lt;/fontunderline&gt;
+		&lt;alignment&gt;0&lt;/alignment&gt;
+		&lt;format/&gt;
+		&lt;inputmask/&gt;
+		&lt;hposition&gt;-1&lt;/hposition&gt;
+		&lt;vposition&gt;-1&lt;/vposition&gt;
+		&lt;group&gt;0&lt;/group&gt;
+		&lt;chart&gt;99&lt;/chart&gt;
+		&lt;chartorder&gt;0&lt;/chartorder&gt;
+		&lt;chartinputmask/&gt;
+		&lt;chartformat/&gt;
+		&lt;totaltype&gt;N&lt;/totaltype&gt;
+		&lt;charttotaltype&gt;N&lt;/charttotaltype&gt;
+		&lt;forecolor&gt;-1&lt;/forecolor&gt;
+		&lt;backcolor&gt;-1&lt;/backcolor&gt;
+		&lt;suppress&gt;false&lt;/suppress&gt;
+		&lt;groupcount&gt;false&lt;/groupcount&gt;
+		&lt;fontname/&gt;
+		&lt;fontsize&gt;0&lt;/fontsize&gt;
+		&lt;autofit&gt;true&lt;/autofit&gt;
+		&lt;newpage&gt;false&lt;/newpage&gt;
+		&lt;resetpage&gt;false&lt;/resetpage&gt;
+		&lt;descending&gt;false&lt;/descending&gt;
+		&lt;includeallfields&gt;false&lt;/includeallfields&gt;
+		&lt;aliascaption&gt;Datecont&lt;/aliascaption&gt;
+		&lt;bookmark&gt;false&lt;/bookmark&gt;
+		&lt;datatrim&gt;1&lt;/datatrim&gt;
+		&lt;memberdata/&gt;
+		&lt;usedefaultformat&gt;true&lt;/usedefaultformat&gt;
+		&lt;usedefaultformatchart&gt;true&lt;/usedefaultformatchart&gt;
+		&lt;groupononeline&gt;false&lt;/groupononeline&gt;
+		&lt;nototalsforonerecord&gt;false&lt;/nototalsforonerecord&gt;
+		&lt;showpercent&gt;false&lt;/showpercent&gt;
+		&lt;appview/&gt;
+		&lt;showchange&gt;false&lt;/showchange&gt;
+		&lt;showchangeamt&gt;false&lt;/showchangeamt&gt;
+	&lt;/field&gt;
+	&lt;field&gt;
+		&lt;fieldname&gt;DATECONT.DATECONT&lt;/fieldname&gt;
+		&lt;heading&gt;Contact Date&lt;/heading&gt;
+		&lt;order&gt;6&lt;/order&gt;
+		&lt;width&gt;8&lt;/width&gt;
+		&lt;fontbold&gt;false&lt;/fontbold&gt;
+		&lt;fontitalic&gt;false&lt;/fontitalic&gt;
+		&lt;fontunderline&gt;false&lt;/fontunderline&gt;
+		&lt;alignment&gt;0&lt;/alignment&gt;
+		&lt;format/&gt;
+		&lt;inputmask/&gt;
+		&lt;hposition&gt;-1&lt;/hposition&gt;
+		&lt;vposition&gt;-1&lt;/vposition&gt;
+		&lt;group&gt;0&lt;/group&gt;
+		&lt;chart&gt;99&lt;/chart&gt;
+		&lt;chartorder&gt;0&lt;/chartorder&gt;
+		&lt;chartinputmask/&gt;
+		&lt;chartformat/&gt;
+		&lt;totaltype&gt;N&lt;/totaltype&gt;
+		&lt;charttotaltype&gt;N&lt;/charttotaltype&gt;
+		&lt;forecolor&gt;-1&lt;/forecolor&gt;
+		&lt;backcolor&gt;-1&lt;/backcolor&gt;
+		&lt;suppress&gt;false&lt;/suppress&gt;
+		&lt;groupcount&gt;false&lt;/groupcount&gt;
+		&lt;fontname/&gt;
+		&lt;fontsize&gt;0&lt;/fontsize&gt;
+		&lt;autofit&gt;true&lt;/autofit&gt;
+		&lt;newpage&gt;false&lt;/newpage&gt;
+		&lt;resetpage&gt;false&lt;/resetpage&gt;
+		&lt;descending&gt;false&lt;/descending&gt;
+		&lt;includeallfields&gt;false&lt;/includeallfields&gt;
+		&lt;aliascaption&gt;Datecont&lt;/aliascaption&gt;
+		&lt;bookmark&gt;false&lt;/bookmark&gt;
+		&lt;datatrim&gt;1&lt;/datatrim&gt;
+		&lt;memberdata/&gt;
+		&lt;usedefaultformat&gt;true&lt;/usedefaultformat&gt;
+		&lt;usedefaultformatchart&gt;true&lt;/usedefaultformatchart&gt;
+		&lt;groupononeline&gt;false&lt;/groupononeline&gt;
+		&lt;nototalsforonerecord&gt;false&lt;/nototalsforonerecord&gt;
+		&lt;showpercent&gt;false&lt;/showpercent&gt;
+		&lt;appview/&gt;
+		&lt;showchange&gt;false&lt;/showchange&gt;
+		&lt;showchangeamt&gt;false&lt;/showchangeamt&gt;
+	&lt;/field&gt;
+&lt;/fields&gt;
+</fields>
+		<comments/>
+		<rep_type>Q</rep_type>
+		<footer/>
+		<header>TECH11 tech support log by week for 11</header>
+		<leftmargin>0</leftmargin>
+		<doquery/>
+		<filter>&lt;conditions&gt;
+		&lt;condition&gt;
+			&lt;connection&gt;&lt;/connection&gt;
+			&lt;fieldname&gt;DATECONT.DATECONT&lt;/fieldname&gt;
+			&lt;operclass&gt;sfoperatorbetween&lt;/operclass&gt;
+			&lt;values&gt;&lt;![CDATA[&lt;value&gt;{^2012-08-22 00:00:00}&lt;/value&gt;&lt;value&gt;{^2012-08-22 23:59:59}&lt;/value&gt;]]&gt;&lt;/values&gt;
+			&lt;dispvalues&gt;&lt;/dispvalues&gt;
+			&lt;case&gt;true&lt;/case&gt;
+			&lt;prompt&gt;true&lt;/prompt&gt;
+			&lt;valuetype&gt;Value&lt;/valuetype&gt;
+			&lt;nodisp&gt;false&lt;/nodisp&gt;
+		&lt;/condition&gt;
+		&lt;condition&gt;
+			&lt;connection&gt; and &lt;/connection&gt;
+			&lt;fieldname&gt;DATECONT.TECHCALL&lt;/fieldname&gt;
+			&lt;operclass&gt;sfoperatorisyes&lt;/operclass&gt;
+			&lt;values&gt;&lt;/values&gt;
+			&lt;dispvalues&gt;&lt;/dispvalues&gt;
+			&lt;case&gt;false&lt;/case&gt;
+			&lt;prompt&gt;false&lt;/prompt&gt;
+			&lt;valuetype&gt;Value&lt;/valuetype&gt;
+			&lt;nodisp&gt;false&lt;/nodisp&gt;
+		&lt;/condition&gt;
+		&lt;condition&gt;
+			&lt;connection&gt; and &lt;/connection&gt;
+			&lt;fieldname&gt;DATECONT.REASON&lt;/fieldname&gt;
+			&lt;operclass&gt;sfoperatornotbegins&lt;/operclass&gt;
+			&lt;values&gt;&lt;![CDATA[&lt;value&gt;LOOKING UP INFO&lt;/value&gt;]]&gt;&lt;/values&gt;
+			&lt;dispvalues&gt;&lt;/dispvalues&gt;
+			&lt;case&gt;true&lt;/case&gt;
+			&lt;prompt&gt;false&lt;/prompt&gt;
+			&lt;valuetype&gt;Value&lt;/valuetype&gt;
+			&lt;nodisp&gt;false&lt;/nodisp&gt;
+		&lt;/condition&gt;
+		&lt;condition&gt;
+			&lt;connection&gt; or &lt;/connection&gt;
+			&lt;fieldname&gt;DATECONT.REASON&lt;/fieldname&gt;
+			&lt;operclass&gt;sfoperatorbegins&lt;/operclass&gt;
+			&lt;values&gt;&lt;![CDATA[&lt;value&gt;Oops&lt;/value&gt;]]&gt;&lt;/values&gt;
+			&lt;dispvalues&gt;&lt;/dispvalues&gt;
+			&lt;case&gt;true&lt;/case&gt;
+			&lt;prompt&gt;false&lt;/prompt&gt;
+			&lt;valuetype&gt;Value&lt;/valuetype&gt;
+			&lt;nodisp&gt;false&lt;/nodisp&gt;
+		&lt;/condition&gt;
+	&lt;/conditions&gt;</filter>
+		<reportprop/>
+		<onselect/>
+		<orientat>0</orientat>
+		<frxfile/>
+		<afterrun/>
+		<summary>false</summary>
+		<showfilter>true</showfilter>
+		<beforedata/>
+		<afterdata/>
+		<createdat>2012-08-12T08:51:35</createdat>
+		<createdby>ADMIN</createdby>
+		<modifiedat>2012-08-22T10:46:21</modifiedat>
+		<modifiedby>ADMIN</modifiedby>
+		<runat>2012-08-22T10:27:46</runat>
+		<runby>ADMIN</runby>
+		<template>2</template>
+		<oldengine>false</oldengine>
+		<allowdupe>false</allowdupe>
+		<snapshot/>
+		<sqlclause/>
+		<exclude/>
+		<headtotals>false</headtotals>
+		<distinct>false</distinct>
+		<customjoin/>
+		<templatefile>&lt;?xml version = "1.0" encoding="Windows-1252" standalone="yes"?&gt;
+&lt;VFPData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="reportschema.xsd"&gt;
+	&lt;template platform="" uniqueid="" timestamp="0" objtype="0" objcode="0" name="Standard" expr="" vpos="0" hpos="0" height="0" width="0" style="" picture="" order="" unique="false" comment="" environ="false" boxchar="" fillchar="" tag="" tag2="" penred="0" pengreen="0" penblue="0" fillred="0" fillgreen="0" fillblue="0" pensize="0" penpat="0" fillpat="0" fontface="" fontstyle="0" fontsize="0" mode="0" ruler="0" rulerlines="0" grid="false" gridv="0" gridh="0" float="false" stretch="false" stretchtop="false" top="false" bottom="false" suptype="0" suprest="0" norepeat="false" resetrpt="0" pagebreak="false" colbreak="false" resetpage="false" general="0" spacing="0" double="false" swapheader="false" swapfooter="false" ejectbefor="false" ejectafter="false" plain="false" summary="false" addalias="false" offset="0" topmargin="0" botmargin="0" totaltype="0" resettotal="0" resoid="0" curpos="false" supalways="false" supovflow="false" suprpcol="0" supgroup="0" supvalchng="false" supexpr="" user=""/&gt;
+	&lt;template platform="WINDOWS" uniqueid="_1GA0YS1E0" timestamp="844136965" objtype="1" objcode="53" name="" expr="ORIENTATION=0
+PAPERSIZE=1
+COLOR=1
+" vpos="1.000" hpos="0.000" height="0.000" width="-1.000" style="" picture="" order="ACABAA==" unique="false" comment="" environ="false" boxchar="" fillchar="" tag="" tag2="" penred="0" pengreen="0" penblue="0" fillred="0" fillgreen="0" fillblue="0" pensize="0" penpat="0" fillpat="0" fontface="Arial" fontstyle="0" fontsize="10" mode="0" ruler="1" rulerlines="1" grid="true" gridv="5" gridh="5" float="false" stretch="false" stretchtop="false" top="false" bottom="false" suptype="0" suprest="0" norepeat="false" resetrpt="0" pagebreak="false" colbreak="false" resetpage="false" general="0" spacing="0" double="true" swapheader="false" swapfooter="false" ejectbefor="false" ejectafter="false" plain="false" summary="false" addalias="true" offset="0" topmargin="0" botmargin="0" totaltype="0" resettotal="0" resoid="1" curpos="true" supalways="false" supovflow="false" suprpcol="0" supgroup="0" supvalchng="false" supexpr="" user=""/&gt;
+	&lt;template platform="WINDOWS" uniqueid="_1GA0YS1E1" timestamp="0" objtype="9" objcode="1" name="" expr="" vpos="0.000" hpos="0.000" height="10834.000" width="104.000" style="" picture="" order="" unique="false" comment="" environ="false" boxchar="" fillchar="" tag="" tag2="" penred="0" pengreen="0" penblue="0" fillred="0" fillgreen="0" fillblue="0" pensize="0" penpat="0" fillpat="0" fontface="" fontstyle="0" fontsize="0" mode="0" ruler="0" rulerlines="0" grid="false" gridv="0" gridh="0" float="false" stretch="false" stretchtop="false" top="false" bottom="false" suptype="0" suprest="0" norepeat="false" resetrpt="0" pagebreak="false" colbreak="false" resetpage="false" general="0" spacing="0" double="false" swapheader="false" swapfooter="false" ejectbefor="false" ejectafter="false" plain="false" summary="false" addalias="false" offset="0" topmargin="0" botmargin="0" totaltype="0" resettotal="0" resoid="0" curpos="false" supalways="false" supovflow="false" suprpcol="0" supgroup="0" supvalchng="false" supexpr="" user=""/&gt;
+	&lt;template platform="WINDOWS" uniqueid="_1GA0YS1ED" timestamp="0" objtype="9" objcode="3" name="" expr="GROUPTEMPLATE" vpos="0.000" hpos="0.000" height="3959.000" width="3750.000" style="" picture="" order="" unique="false" comment="" environ="false" boxchar="" fillchar="" tag="" tag2="" penred="0" pengreen="0" penblue="0" fillred="0" fillgreen="0" fillblue="0" pensize="0" penpat="0" fillpat="0" fontface="" fontstyle="0" fontsize="0" mode="0" ruler="0" rulerlines="0" grid="false" gridv="0" gridh="0" float="false" stretch="false" stretchtop="false" top="false" bottom="false" suptype="0" suprest="0" norepeat="true" resetrpt="0" pagebreak="false" colbreak="false" resetpage="false" general="0" spacing="0" double="false" swapheader="false" swapfooter="false" ejectbefor="false" ejectafter="false" plain="false" summary="false" addalias="false" offset="0" topmargin="0" botmargin="0" totaltype="0" resettotal="0" resoid="0" curpos="false" supalways="false" supovflow="false" suprpcol="0" supgroup="0" supvalchng="false" supexpr="" user=""/&gt;
+	&lt;template platform="WINDOWS" uniqueid="_1GA0YS1EG" timestamp="0" objtype="9" objcode="4" name="" expr="" vpos="0.000" hpos="0.000" height="1875.000" width="104.000" style="" picture="" order="" unique="false" comment="" environ="false" boxchar="" fillchar="" tag="" tag2="" penred="0" pengreen="0" penblue="0" fillred="0" fillgreen="0" fillblue="0" pensize="0" penpat="0" fillpat="0" fontface="" fontstyle="0" fontsize="0" mode="0" ruler="0" rulerlines="0" grid="false" gridv="0" gridh="0" float="false" stretch="false" stretchtop="false" top="false" bottom="false" suptype="0" suprest="0" norepeat="false" resetrpt="0" pagebreak="false" colbreak="false" resetpage="false" general="0" spacing="0" double="false" swapheader="false" swapfooter="false" ejectbefor="false" ejectafter="false" plain="false" summary="false" addalias="false" offset="0" topmargin="0" botmargin="0" totaltype="0" resettotal="0" resoid="0" curpos="false" supalways="false" supovflow="false" suprpcol="0" supgroup="0" supvalchng="false" supexpr="" user=""/&gt;
+	&lt;template platform="WINDOWS" uniqueid="_1GA0YS1EI" timestamp="0" objtype="9" objcode="5" name="" expr="" vpos="0.000" hpos="0.000" height="3021.000" width="3750.000" style="" picture="" order="" unique="false" comment="" environ="false" boxchar="" fillchar="" tag="" tag2="" penred="0" pengreen="0" penblue="0" fillred="0" fillgreen="0" fillblue="0" pensize="0" penpat="0" fillpat="0" fontface="" fontstyle="0" fontsize="0" mode="0" ruler="0" rulerlines="0" grid="false" gridv="0" gridh="0" float="false" stretch="false" stretchtop="false" top="false" bottom="false" suptype="0" suprest="0" norepeat="true" resetrpt="0" pagebreak="false" colbreak="false" resetpage="false" general="0" spacing="0" double="false" swapheader="false" swapfooter="false" ejectbefor="false" ejectafter="false" plain="false" summary="false" addalias="false" offset="0" topmargin="0" botmargin="0" totaltype="0" resettotal="0" resoid="0" curpos="false" supalways="false" supovflow="false" suprpcol="0" supgroup="0" supvalchng="false" supexpr="" user=""/&gt;
+	&lt;template platform="WINDOWS" uniqueid="_1GA0YS1EK" timestamp="0" objtype="9" objcode="7" name="" expr="" vpos="0.000" hpos="0.000" height="1875.000" width="104.000" style="" picture="" order="" unique="false" comment="" environ="false" boxchar="" fillchar="" tag="" tag2="" penred="0" pengreen="0" penblue="0" fillred="0" fillgreen="0" fillblue="0" pensize="0" penpat="0" fillpat="0" fontface="" fontstyle="0" fontsize="0" mode="0" ruler="0" rulerlines="0" grid="false" gridv="0" gridh="0" float="false" stretch="false" stretchtop="false" top="false" bottom="false" suptype="0" suprest="0" norepeat="false" resetrpt="0" pagebreak="false" colbreak="false" resetpage="false" general="0" spacing="0" double="false" swapheader="false" swapfooter="false" ejectbefor="false" ejectafter="false" plain="false" summary="false" addalias="false" offset="0" topmargin="0" botmargin="0" totaltype="0" resettotal="0" resoid="0" curpos="false" supalways="false" supovflow="false" suprpcol="0" supgroup="0" supvalchng="false" supexpr="" user=""/&gt;
+	&lt;template platform="WINDOWS" uniqueid="_1GA0YS1EM" timestamp="0" objtype="9" objcode="8" name="" expr="" vpos="0.000" hpos="0.000" height="3542.000" width="104.000" style="" picture="" order="" unique="false" comment="" environ="false" boxchar="" fillchar="" tag="" tag2="" penred="0" pengreen="0" penblue="0" fillred="0" fillgreen="0" fillblue="0" pensize="0" penpat="0" fillpat="0" fontface="" fontstyle="0" fontsize="0" mode="0" ruler="0" rulerlines="0" grid="false" gridv="0" gridh="0" float="false" stretch="false" stretchtop="false" top="false" bottom="false" suptype="0" suprest="0" norepeat="false" resetrpt="0" pagebreak="false" colbreak="false" resetpage="false" general="0" spacing="0" double="false" swapheader="false" swapfooter="false" ejectbefor="true" ejectafter="true" plain="false" summary="false" addalias="false" offset="0" topmargin="0" botmargin="0" totaltype="0" resettotal="0" resoid="0" curpos="false" supalways="false" supovflow="false" suprpcol="0" supgroup="0" supvalchng="false" supexpr="" user=""/&gt;
+	&lt;template platform="WINDOWS" uniqueid="_1GA0YS1E2" timestamp="844136965" objtype="8" objcode="0" name="Page Header" expr="loReport.GetReportHeader()" vpos="0.000" hpos="0.000" height="1875.000" width="30000.000" style="&amp;lt;VFPData&amp;gt;&amp;lt;reportdata name=&amp;quot;sfquery&amp;quot; type=&amp;quot;settings&amp;quot; process=&amp;quot;false&amp;quot; stretch=&amp;quot;true&amp;quot;/&amp;gt;&amp;lt;/VFPData&amp;gt;" picture="" order="" unique="false" comment="" environ="false" boxchar="" fillchar="C" tag="" tag2="" penred="-1" pengreen="-1" penblue="-1" fillred="-1" fillgreen="-1" fillblue="-1" pensize="0" penpat="0" fillpat="0" fontface="Arial" fontstyle="1" fontsize="10" mode="1" ruler="0" rulerlines="0" grid="false" gridv="0" gridh="0" float="true" stretch="true" stretchtop="false" top="false" bottom="false" suptype="0" suprest="0" norepeat="false" resetrpt="0" pagebreak="false" colbreak="false" resetpage="false" general="0" spacing="0" double="true" swapheader="false" swapfooter="false" ejectbefor="false" ejectafter="false" plain="false" summary="false" addalias="false" offset="2" topmargin="0" botmargin="0" totaltype="0" resettotal="1" resoid="1" curpos="false" supalways="true" supovflow="true" suprpcol="0" supgroup="6" supvalchng="false" supexpr="" user=""/&gt;
+	&lt;template platform="WINDOWS" uniqueid="_1GA0YS1E3" timestamp="844136965" objtype="6" objcode="0" name="" expr="" vpos="2708.333" hpos="0.000" height="104.167" width="29791.667" style="&amp;lt;VFPData&amp;gt;&amp;lt;reportdata name=&amp;quot;sfquery&amp;quot; type=&amp;quot;settings&amp;quot; stretch=&amp;quot;true&amp;quot;/&amp;gt;&amp;lt;/VFPData&amp;gt;
+" picture="" order="" unique="false" comment="" environ="false" boxchar="" fillchar="" tag="" tag2="" penred="255" pengreen="255" penblue="255" fillred="255" fillgreen="255" fillblue="255" pensize="0" penpat="8" fillpat="0" fontface="" fontstyle="0" fontsize="0" mode="1" ruler="0" rulerlines="0" grid="false" gridv="0" gridh="0" float="true" stretch="false" stretchtop="false" top="false" bottom="false" suptype="0" suprest="0" norepeat="false" resetrpt="0" pagebreak="false" colbreak="false" resetpage="false" general="0" spacing="0" double="false" swapheader="false" swapfooter="false" ejectbefor="false" ejectafter="false" plain="false" summary="false" addalias="false" offset="1" topmargin="0" botmargin="0" totaltype="0" resettotal="0" resoid="0" curpos="false" supalways="true" supovflow="true" suprpcol="0" supgroup="6" supvalchng="false" supexpr="" user=""/&gt;
+	&lt;template platform="WINDOWS" uniqueid="_1GA0YS1E4" timestamp="844136965" objtype="8" objcode="0" name="Date" expr="iif(type(&amp;quot;loReport.dReportDate&amp;quot;) $ &amp;quot;DT&amp;quot;, loReport.dReportDate, date())" vpos="3229.167" hpos="0.000" height="1875.000" width="10520.833" style="&amp;lt;VFPData&amp;gt;&amp;lt;reportdata name=&amp;quot;sfquery&amp;quot; type=&amp;quot;settings&amp;quot; process=&amp;quot;false&amp;quot;/&amp;gt;&amp;lt;/VFPData&amp;gt;" picture="" order="" unique="false" comment="" environ="false" boxchar="" fillchar="D" tag="" tag2="" penred="-1" pengreen="-1" penblue="-1" fillred="-1" fillgreen="-1" fillblue="-1" pensize="0" penpat="0" fillpat="0" fontface="Arial" fontstyle="1" fontsize="10" mode="1" ruler="0" rulerlines="0" grid="false" gridv="0" gridh="0" float="true" stretch="false" stretchtop="false" top="false" bottom="false" suptype="0" suprest="0" norepeat="false" resetrpt="0" pagebreak="false" colbreak="false" resetpage="false" general="0" spacing="0" double="true" swapheader="false" swapfooter="false" ejectbefor="false" ejectafter="false" plain="false" summary="false" addalias="false" offset="0" topmargin="0" botmargin="0" totaltype="0" resettotal="1" resoid="1" curpos="false" supalways="true" supovflow="true" suprpcol="0" supgroup="6" supvalchng="false" supexpr="" user=""/&gt;
+	&lt;template platform="WINDOWS" uniqueid="_1GA0YS1E5" timestamp="844136965" objtype="8" objcode="0" name="Page #" expr="oLocalizer.GetLocalizedString('STR_PAGE') + ' ' + transform(_pageno) + ' ' + oLocalizer.GetLocalizedString('STR_OF') + ' ' + transform(_pagetotal)" vpos="3229.167" hpos="17708.333" height="1875.000" width="12500.000" style="&amp;lt;VFPData&amp;gt;&amp;lt;reportdata name=&amp;quot;sfquery&amp;quot; type=&amp;quot;settings&amp;quot; process=&amp;quot;false&amp;quot; align=&amp;quot;right&amp;quot;/&amp;gt;&amp;lt;/VFPData&amp;gt;" picture="" order="" unique="false" comment="" environ="false" boxchar="" fillchar="C" tag="" tag2="" penred="-1" pengreen="-1" penblue="-1" fillred="-1" fillgreen="-1" fillblue="-1" pensize="0" penpat="0" fillpat="0" fontface="Arial" fontstyle="1" fontsize="10" mode="1" ruler="0" rulerlines="0" grid="false" gridv="0" gridh="0" float="true" stretch="false" stretchtop="false" top="false" bottom="false" suptype="0" suprest="0" norepeat="false" resetrpt="0" pagebreak="false" colbreak="false" resetpage="false" general="0" spacing="0" double="true" swapheader="false" swapfooter="false" ejectbefor="false" ejectafter="false" plain="false" summary="false" addalias="false" offset="1" topmargin="0" botmargin="0" totaltype="0" resettotal="1" resoid="1" curpos="false" supalways="true" supovflow="true" suprpcol="0" supgroup="6" supvalchng="false" supexpr="" user=""/&gt;
+	&lt;template platform="WINDOWS" uniqueid="_1GA0YS1EA" timestamp="844136965" objtype="6" objcode="0" name="" expr="" vpos="6875.000" hpos="0.000" height="104.167" width="29791.667" style="&amp;lt;VFPData&amp;gt;&amp;lt;reportdata name=&amp;quot;sfquery&amp;quot; type=&amp;quot;settings&amp;quot; stretch=&amp;quot;true&amp;quot;/&amp;gt;&amp;lt;/VFPData&amp;gt;" picture="" order="" unique="false" comment="" environ="false" boxchar="" fillchar="" tag="" tag2="" penred="-1" pengreen="-1" penblue="-1" fillred="-1" fillgreen="-1" fillblue="-1" pensize="0" penpat="8" fillpat="0" fontface="" fontstyle="0" fontsize="0" mode="1" ruler="0" rulerlines="0" grid="false" gridv="0" gridh="0" float="true" stretch="false" stretchtop="false" top="false" bottom="false" suptype="0" suprest="0" norepeat="false" resetrpt="0" pagebreak="false" colbreak="false" resetpage="false" general="0" spacing="0" double="false" swapheader="false" swapfooter="false" ejectbefor="false" ejectafter="false" plain="false" summary="false" addalias="false" offset="1" topmargin="0" botmargin="0" totaltype="0" resettotal="0" resoid="0" curpos="false" supalways="true" supovflow="true" suprpcol="0" supgroup="6" supvalchng="false" supexpr="" user=""/&gt;
+	&lt;template platform="WINDOWS" uniqueid="_1GA0YS1EB" timestamp="844136965" objtype="8" objcode="0" name="" expr="&amp;quot;Column Heading&amp;quot;" vpos="7604.167" hpos="0.000" height="1875.000" width="22395.833" style="&amp;lt;VFPData&amp;gt;&amp;lt;reportdata name=&amp;quot;sfquery&amp;quot; type=&amp;quot;settings&amp;quot; process=&amp;quot;false&amp;quot; template=&amp;quot;heading&amp;quot;/&amp;gt;&amp;lt;/VFPData&amp;gt;" picture="" order="" unique="false" comment="" environ="false" boxchar="" fillchar="C" tag="" tag2="" penred="-1" pengreen="-1" penblue="-1" fillred="-1" fillgreen="-1" fillblue="-1" pensize="0" penpat="0" fillpat="0" fontface="Arial" fontstyle="1" fontsize="10" mode="1" ruler="0" rulerlines="0" grid="false" gridv="0" gridh="0" float="true" stretch="true" stretchtop="false" top="false" bottom="false" suptype="0" suprest="0" norepeat="false" resetrpt="0" pagebreak="false" colbreak="false" resetpage="false" general="0" spacing="0" double="true" swapheader="false" swapfooter="false" ejectbefor="false" ejectafter="false" plain="false" summary="false" addalias="false" offset="0" topmargin="0" botmargin="0" totaltype="0" resettotal="1" resoid="1" curpos="false" supalways="true" supovflow="true" suprpcol="0" supgroup="6" supvalchng="false" supexpr="" user=""/&gt;
+	&lt;template platform="WINDOWS" uniqueid="_1GA0YS1EC" timestamp="844136965" objtype="6" objcode="0" name="" expr="" vpos="10104.167" hpos="0.000" height="104.167" width="29791.667" style="&amp;lt;VFPData&amp;gt;&amp;lt;reportdata name=&amp;quot;sfquery&amp;quot; type=&amp;quot;settings&amp;quot; process=&amp;quot;false&amp;quot; stretch=&amp;quot;true&amp;quot;/&amp;gt;&amp;lt;/VFPData&amp;gt;" picture="" order="" unique="false" comment="" environ="false" boxchar="" fillchar="" tag="" tag2="" penred="-1" pengreen="-1" penblue="-1" fillred="-1" fillgreen="-1" fillblue="-1" pensize="0" penpat="8" fillpat="0" fontface="" fontstyle="0" fontsize="0" mode="1" ruler="0" rulerlines="0" grid="false" gridv="0" gridh="0" float="false" stretch="false" stretchtop="false" top="false" bottom="true" suptype="0" suprest="0" norepeat="false" resetrpt="0" pagebreak="false" colbreak="false" resetpage="false" general="0" spacing="0" double="false" swapheader="false" swapfooter="false" ejectbefor="false" ejectafter="false" plain="false" summary="false" addalias="false" offset="1" topmargin="0" botmargin="0" totaltype="0" resettotal="0" resoid="0" curpos="false" supalways="true" supovflow="true" suprpcol="0" supgroup="6" supvalchng="false" supexpr="" user=""/&gt;
+	&lt;template platform="WINDOWS" uniqueid="_1GA0YS1EF" timestamp="844136965" objtype="8" objcode="0" name="" expr="GROUPTEMPLATE" vpos="13958.333" hpos="11458.333" height="1875.000" width="18437.500" style="&amp;lt;VFPData&amp;gt;&amp;lt;reportdata name=&amp;quot;sfquery&amp;quot; type=&amp;quot;settings&amp;quot; template=&amp;quot;groupfield&amp;quot;/&amp;gt;&amp;lt;/VFPData&amp;gt;" picture="" order="" unique="false" comment="" environ="false" boxchar="" fillchar="C" tag="" tag2="" penred="-1" pengreen="-1" penblue="-1" fillred="-1" fillgreen="-1" fillblue="-1" pensize="0" penpat="0" fillpat="0" fontface="Arial" fontstyle="1" fontsize="10" mode="1" ruler="0" rulerlines="0" grid="false" gridv="0" gridh="0" float="true" stretch="true" stretchtop="false" top="false" bottom="false" suptype="0" suprest="0" norepeat="false" resetrpt="0" pagebreak="false" colbreak="false" resetpage="false" general="0" spacing="0" double="true" swapheader="false" swapfooter="false" ejectbefor="false" ejectafter="false" plain="false" summary="false" addalias="false" offset="0" topmargin="0" botmargin="0" totaltype="0" resettotal="1" resoid="1" curpos="true" supalways="true" supovflow="false" suprpcol="3" supgroup="6" supvalchng="false" supexpr="" user=""/&gt;
+	&lt;template platform="WINDOWS" uniqueid="_1GA0YS1EH" timestamp="844136965" objtype="8" objcode="0" name="" expr="FIELDTEMPLATE" vpos="18958.333" hpos="0.000" height="1875.000" width="22395.833" style="&amp;lt;VFPData&amp;gt;&amp;lt;reportdata name=&amp;quot;sfquery&amp;quot; type=&amp;quot;settings&amp;quot; process=&amp;quot;false&amp;quot; template=&amp;quot;field&amp;quot;/&amp;gt;&amp;lt;/VFPData&amp;gt;" picture="" order="" unique="false" comment="" environ="false" boxchar="" fillchar="C" tag="" tag2="" penred="-1" pengreen="-1" penblue="-1" fillred="-1" fillgreen="-1" fillblue="-1" pensize="0" penpat="0" fillpat="0" fontface="Arial" fontstyle="0" fontsize="10" mode="1" ruler="0" rulerlines="0" grid="false" gridv="0" gridh="0" float="true" stretch="true" stretchtop="false" top="false" bottom="false" suptype="0" suprest="0" norepeat="false" resetrpt="0" pagebreak="false" colbreak="false" resetpage="false" general="0" spacing="0" double="true" swapheader="false" swapfooter="false" ejectbefor="false" ejectafter="false" plain="false" summary="false" addalias="false" offset="0" topmargin="0" botmargin="0" totaltype="0" resettotal="1" resoid="1" curpos="false" supalways="true" supovflow="false" suprpcol="3" supgroup="6" supvalchng="false" supexpr="" user=""/&gt;
+	&lt;template platform="WINDOWS" uniqueid="_1GA0YS1EL" timestamp="844136965" objtype="8" objcode="0" name="Page Footer" expr="loReport.GetReportFooter()" vpos="28020.833" hpos="0.000" height="1875.000" width="30000.000" style="&amp;lt;VFPData&amp;gt;&amp;lt;reportdata name=&amp;quot;sfquery&amp;quot; type=&amp;quot;settings&amp;quot; process=&amp;quot;false&amp;quot; stretch=&amp;quot;true&amp;quot;/&amp;gt;&amp;lt;/VFPData&amp;gt;" picture="" order="" unique="false" comment="" environ="false" boxchar="" fillchar="C" tag="" tag2="" penred="-1" pengreen="-1" penblue="-1" fillred="-1" fillgreen="-1" fillblue="-1" pensize="0" penpat="0" fillpat="0" fontface="Arial" fontstyle="1" fontsize="10" mode="1" ruler="0" rulerlines="0" grid="false" gridv="0" gridh="0" float="true" stretch="true" stretchtop="false" top="false" bottom="false" suptype="0" suprest="0" norepeat="false" resetrpt="0" pagebreak="false" colbreak="false" resetpage="false" general="0" spacing="0" double="true" swapheader="false" swapfooter="false" ejectbefor="false" ejectafter="false" plain="false" summary="false" addalias="false" offset="2" topmargin="0" botmargin="0" totaltype="0" resettotal="1" resoid="1" curpos="false" supalways="true" supovflow="true" suprpcol="0" supgroup="6" supvalchng="false" supexpr="" user=""/&gt;
+	&lt;template platform="WINDOWS" uniqueid="_1GA0YS1EN" timestamp="844136965" objtype="6" objcode="0" name="" expr="" vpos="33125.000" hpos="0.000" height="104.167" width="29791.667" style="&amp;lt;VFPData&amp;gt;&amp;lt;reportdata name=&amp;quot;sfquery&amp;quot; type=&amp;quot;settings&amp;quot; stretch=&amp;quot;true&amp;quot;/&amp;gt;&amp;lt;/VFPData&amp;gt;" picture="" order="" unique="false" comment="" environ="false" boxchar="" fillchar="" tag="" tag2="" penred="-1" pengreen="-1" penblue="-1" fillred="-1" fillgreen="-1" fillblue="-1" pensize="0" penpat="8" fillpat="0" fontface="" fontstyle="0" fontsize="0" mode="1" ruler="0" rulerlines="0" grid="false" gridv="0" gridh="0" float="false" stretch="false" stretchtop="false" top="true" bottom="false" suptype="0" suprest="0" norepeat="false" resetrpt="0" pagebreak="false" colbreak="false" resetpage="false" general="0" spacing="0" double="false" swapheader="false" swapfooter="false" ejectbefor="false" ejectafter="false" plain="false" summary="false" addalias="false" offset="1" topmargin="0" botmargin="0" totaltype="0" resettotal="0" resoid="0" curpos="false" supalways="true" supovflow="false" suprpcol="0" supgroup="0" supvalchng="false" supexpr="" user=""/&gt;
+	&lt;template platform="WINDOWS" uniqueid="_1GA0YS1EP" timestamp="858750584" objtype="8" objcode="0" name="Record count" expr="oLocalizer.GetLocalizedString('STR_TOTALS')+': '+strtran(oLocalizer.GetLocalizedString(iif(Report_RecordCount=1,'STR_RECORD_PRINTED','STR_RECORDS_PRINTED')),'&amp;lt;Insert1&amp;gt;',alltrim(transform(Report_RecordCount,'99,999')))" vpos="33645.833" hpos="0.000" height="1875.000" width="21979.167" style="&amp;lt;VFPData&amp;gt;&amp;lt;reportdata name=&amp;quot;sfquery&amp;quot; type=&amp;quot;settings&amp;quot; process=&amp;quot;false&amp;quot;/&amp;gt;&amp;lt;/VFPData&amp;gt;" picture="" order="" unique="false" comment="" environ="false" boxchar="" fillchar="C" tag="" tag2="" penred="-1" pengreen="-1" penblue="-1" fillred="-1" fillgreen="-1" fillblue="-1" pensize="0" penpat="0" fillpat="0" fontface="Arial" fontstyle="1" fontsize="10" mode="1" ruler="0" rulerlines="0" grid="false" gridv="0" gridh="0" float="false" stretch="true" stretchtop="false" top="true" bottom="false" suptype="0" suprest="0" norepeat="false" resetrpt="0" pagebreak="false" colbreak="false" resetpage="false" general="0" spacing="0" double="true" swapheader="false" swapfooter="false" ejectbefor="false" ejectafter="false" plain="false" summary="false" addalias="false" offset="0" topmargin="0" botmargin="0" totaltype="0" resettotal="1" resoid="1" curpos="false" supalways="true" supovflow="false" suprpcol="0" supgroup="0" supvalchng="false" supexpr="" user=""/&gt;
+	&lt;template platform="WINDOWS" uniqueid="_1KR0PZCKE" timestamp="855335146" objtype="8" objcode="0" name="" expr="SUMMARYTEMPLATE" vpos="33645.833" hpos="22395.833" height="1875.000" width="7916.667" style="&amp;lt;VFPData&amp;gt;&amp;lt;reportdata name=&amp;quot;sfquery&amp;quot; type=&amp;quot;settings&amp;quot; template=&amp;quot;summaryfield&amp;quot; expression=&amp;quot;SUMMARYTEMPLATE&amp;quot;/&amp;gt;&amp;lt;/VFPData&amp;gt;
+" picture="" order="" unique="false" comment="" environ="false" boxchar="" fillchar="N" tag="" tag2="" penred="-1" pengreen="-1" penblue="-1" fillred="-1" fillgreen="-1" fillblue="-1" pensize="0" penpat="0" fillpat="0" fontface="Arial" fontstyle="0" fontsize="10" mode="1" ruler="0" rulerlines="0" grid="false" gridv="0" gridh="0" float="true" stretch="true" stretchtop="false" top="false" bottom="false" suptype="0" suprest="0" norepeat="false" resetrpt="0" pagebreak="false" colbreak="false" resetpage="false" general="0" spacing="0" double="true" swapheader="false" swapfooter="false" ejectbefor="false" ejectafter="false" plain="false" summary="false" addalias="false" offset="1" topmargin="0" botmargin="0" totaltype="0" resettotal="1" resoid="1" curpos="false" supalways="true" supovflow="false" suprpcol="0" supgroup="0" supvalchng="false" supexpr="" user=""/&gt;
+	&lt;template platform="WINDOWS" uniqueid="_1M30NJ97S" timestamp="858609497" objtype="8" objcode="0" name="" expr="&amp;quot;Group Heading:&amp;quot;" vpos="13958.333" hpos="0.000" height="1875.000" width="10520.833" style="&amp;lt;VFPData&amp;gt;&amp;lt;reportdata name=&amp;quot;sfquery&amp;quot; type=&amp;quot;settings&amp;quot; process=&amp;quot;false&amp;quot; template=&amp;quot;groupheading&amp;quot;/&amp;gt;&amp;lt;/VFPData&amp;gt;" picture="" order="" unique="false" comment="" environ="false" boxchar="" fillchar="C" tag="" tag2="" penred="-1" pengreen="-1" penblue="-1" fillred="-1" fillgreen="-1" fillblue="-1" pensize="0" penpat="0" fillpat="0" fontface="Arial" fontstyle="1" fontsize="10" mode="1" ruler="0" rulerlines="0" grid="false" gridv="0" gridh="0" float="true" stretch="true" stretchtop="false" top="false" bottom="false" suptype="0" suprest="0" norepeat="false" resetrpt="0" pagebreak="false" colbreak="false" resetpage="false" general="0" spacing="0" double="true" swapheader="false" swapfooter="false" ejectbefor="false" ejectafter="false" plain="false" summary="false" addalias="false" offset="0" topmargin="0" botmargin="0" totaltype="0" resettotal="1" resoid="1" curpos="false" supalways="true" supovflow="false" suprpcol="3" supgroup="6" supvalchng="false" supexpr="" user=""/&gt;
+	&lt;template platform="WINDOWS" uniqueid="_1M50ZE700" timestamp="858751961" objtype="8" objcode="0" name="" expr="GROUPSUMMARYTEMPLATE" vpos="24062.500" hpos="22395.833" height="1875.000" width="7916.667" style="&amp;lt;VFPData&amp;gt;&amp;lt;reportdata name=&amp;quot;sfquery&amp;quot; type=&amp;quot;settings&amp;quot; template=&amp;quot;groupsummary&amp;quot; expression=&amp;quot;GROUPSUMMARYTEMPLATE&amp;quot;/&amp;gt;&amp;lt;/VFPData&amp;gt;
+" picture="" order="" unique="false" comment="" environ="false" boxchar="" fillchar="N" tag="" tag2="" penred="-1" pengreen="-1" penblue="-1" fillred="-1" fillgreen="-1" fillblue="-1" pensize="0" penpat="0" fillpat="0" fontface="Arial" fontstyle="0" fontsize="10" mode="1" ruler="0" rulerlines="0" grid="false" gridv="0" gridh="0" float="true" stretch="true" stretchtop="false" top="false" bottom="false" suptype="0" suprest="0" norepeat="false" resetrpt="0" pagebreak="false" colbreak="false" resetpage="false" general="0" spacing="0" double="true" swapheader="false" swapfooter="false" ejectbefor="false" ejectafter="false" plain="false" summary="false" addalias="false" offset="1" topmargin="0" botmargin="0" totaltype="0" resettotal="1" resoid="1" curpos="false" supalways="true" supovflow="false" suprpcol="3" supgroup="6" supvalchng="false" supexpr="" user=""/&gt;
+	&lt;template platform="WINDOWS" uniqueid="_1M50ZICFY" timestamp="858752066" objtype="8" objcode="0" name="" expr="GROUPFOOTERTEMPLATE" vpos="24062.500" hpos="0.000" height="1875.000" width="21979.167" style="&amp;lt;VFPData&amp;gt;&amp;lt;reportdata name=&amp;quot;sfquery&amp;quot; type=&amp;quot;settings&amp;quot; process=&amp;quot;false&amp;quot; template=&amp;quot;groupfooter&amp;quot; expression=&amp;quot;GROUPFIELD,GROUPCOUNT&amp;quot;/&amp;gt;&amp;lt;/VFPData&amp;gt;
+" picture="" order="" unique="false" comment="" environ="false" boxchar="" fillchar="C" tag="" tag2="" penred="-1" pengreen="-1" penblue="-1" fillred="-1" fillgreen="-1" fillblue="-1" pensize="0" penpat="0" fillpat="0" fontface="Arial" fontstyle="1" fontsize="10" mode="1" ruler="0" rulerlines="0" grid="false" gridv="0" gridh="0" float="true" stretch="true" stretchtop="false" top="false" bottom="false" suptype="0" suprest="0" norepeat="false" resetrpt="0" pagebreak="false" colbreak="false" resetpage="false" general="0" spacing="0" double="true" swapheader="false" swapfooter="false" ejectbefor="false" ejectafter="false" plain="false" summary="false" addalias="false" offset="0" topmargin="0" botmargin="0" totaltype="0" resettotal="1" resoid="1" curpos="false" supalways="true" supovflow="false" suprpcol="3" supgroup="6" supvalchng="false" supexpr="" user=""/&gt;
+	&lt;template platform="WINDOWS" uniqueid="_1GA0YS1EQ" timestamp="978083613" objtype="18" objcode="0" name="Report_GroupCount1" expr="0" vpos="0.000" hpos="0.000" height="0.000" width="0.000" style="" picture="" order="" unique="true" comment="" environ="false" boxchar="" fillchar="" tag="0" tag2="" penred="0" pengreen="0" penblue="0" fillred="0" fillgreen="0" fillblue="0" pensize="0" penpat="0" fillpat="0" fontface="" fontstyle="0" fontsize="0" mode="0" ruler="0" rulerlines="0" grid="false" gridv="0" gridh="0" float="false" stretch="false" stretchtop="false" top="false" bottom="false" suptype="0" suprest="0" norepeat="false" resetrpt="0" pagebreak="false" colbreak="false" resetpage="false" general="0" spacing="0" double="false" swapheader="false" swapfooter="false" ejectbefor="false" ejectafter="false" plain="false" summary="false" addalias="false" offset="0" topmargin="0" botmargin="0" totaltype="1" resettotal="6" resoid="0" curpos="false" supalways="false" supovflow="false" suprpcol="0" supgroup="0" supvalchng="false" supexpr="" user=""/&gt;
+	&lt;template platform="WINDOWS" uniqueid="" timestamp="0" objtype="23" objcode="0" name="" expr="" vpos="16.000" hpos="6.000" height="13.000" width="35.000" style="" picture="" order="" unique="false" comment="" environ="false" boxchar="" fillchar="" tag="" tag2="" penred="3" pengreen="0" penblue="0" fillred="0" fillgreen="0" fillblue="0" pensize="0" penpat="0" fillpat="0" fontface="Arial" fontstyle="0" fontsize="10" mode="0" ruler="0" rulerlines="0" grid="false" gridv="0" gridh="0" float="false" stretch="false" stretchtop="false" top="false" bottom="false" suptype="0" suprest="0" norepeat="false" resetrpt="0" pagebreak="false" colbreak="false" resetpage="false" general="0" spacing="0" double="false" swapheader="false" swapfooter="false" ejectbefor="false" ejectafter="false" plain="false" summary="false" addalias="false" offset="0" topmargin="0" botmargin="0" totaltype="0" resettotal="0" resoid="0" curpos="false" supalways="false" supovflow="false" suprpcol="0" supgroup="0" supvalchng="false" supexpr="" user=""/&gt;
+	&lt;template platform="WINDOWS" uniqueid="" timestamp="0" objtype="23" objcode="0" name="" expr="" vpos="16.000" hpos="6.000" height="13.000" width="34.000" style="" picture="" order="" unique="false" comment="" environ="false" boxchar="" fillchar="" tag="" tag2="" penred="3" pengreen="0" penblue="0" fillred="0" fillgreen="0" fillblue="0" pensize="0" penpat="0" fillpat="0" fontface="Arial" fontstyle="1" fontsize="10" mode="0" ruler="0" rulerlines="0" grid="false" gridv="0" gridh="0" float="false" stretch="false" stretchtop="false" top="false" bottom="false" suptype="0" suprest="0" norepeat="false" resetrpt="0" pagebreak="false" colbreak="false" resetpage="false" general="0" spacing="0" double="false" swapheader="false" swapfooter="false" ejectbefor="false" ejectafter="false" plain="false" summary="false" addalias="false" offset="0" topmargin="0" botmargin="0" totaltype="0" resettotal="0" resoid="0" curpos="false" supalways="false" supovflow="false" suprpcol="0" supgroup="0" supvalchng="false" supexpr="" user=""/&gt;
+	&lt;template platform="WINDOWS" uniqueid="" timestamp="0" objtype="25" objcode="0" name="dataenvironment" expr="Top = 220
+Left = 1
+Width = 520
+Height = 200
+DataSource = .NULL.
+Name = &amp;quot;Dataenvironment&amp;quot;
+" vpos="0.000" hpos="0.000" height="0.000" width="0.000" style="" picture="" order="" unique="false" comment="" environ="false" boxchar="" fillchar="" tag="" tag2="" penred="0" pengreen="0" penblue="0" fillred="0" fillgreen="0" fillblue="0" pensize="0" penpat="0" fillpat="0" fontface="" fontstyle="0" fontsize="0" mode="0" ruler="0" rulerlines="0" grid="false" gridv="0" gridh="0" float="false" stretch="false" stretchtop="false" top="false" bottom="false" suptype="0" suprest="0" norepeat="false" resetrpt="0" pagebreak="false" colbreak="false" resetpage="false" general="0" spacing="0" double="false" swapheader="false" swapfooter="false" ejectbefor="false" ejectafter="false" plain="false" summary="false" addalias="false" offset="0" topmargin="0" botmargin="0" totaltype="0" resettotal="0" resoid="0" curpos="false" supalways="false" supovflow="false" suprpcol="0" supgroup="0" supvalchng="false" supexpr="" user=""/&gt;
+&lt;/VFPData&gt;
+</templatefile>
+		<templatename>Standard</templatename>
+		<security>&lt;root&gt;&lt;role&gt;&lt;name&gt;Everyone&lt;/name&gt;&lt;rights&gt;2&lt;/rights&gt;&lt;/role&gt;&lt;role&gt;&lt;name&gt;Administrators&lt;/name&gt;&lt;rights&gt;1&lt;/rights&gt;&lt;/role&gt;&lt;role&gt;&lt;name&gt;RW&lt;/name&gt;&lt;rights&gt;1&lt;/rights&gt;&lt;/role&gt;&lt;/root&gt;</security>
+		<sdata/>
+		<calcfields/>
+		<repfile/>
+	</report>
+</VFPData>

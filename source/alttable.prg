@@ -1,0 +1,19 @@
+SET PATH TO M:\MBC5
+
+ALTER TABLE jbids ADD COLUMN rfi1 L
+IF USED("jbids")
+SELECT jbids
+USE
+ENDIF
+
+ALTER TABLE jbids ADD COLUMN rfi2 L
+IF USED("jbids")
+SELECT jbids
+USE
+ENDIF
+
+ALTER TABLE jbids ADD COLUMN exprclr L
+IF USED("jbids")
+SELECT jbids
+USE
+endif

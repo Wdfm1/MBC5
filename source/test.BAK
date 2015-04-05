@@ -1,0 +1,49 @@
+SET STEP ON 
+m.schname="CS"
+m.schcode="038752"
+m.persinvamt=0.00
+m.basicinvamt=5.00
+m.basiconly=0
+m.ponum="2"
+m.invno=21
+*!*	SET DATE YMD
+m.onlinecuto=CTOD("07/04/2012")
+*!*	m.onlinecuto=TTMST(a) 
+
+TRY
+
+nConnectionHandle = SQLStringConnect( "DRIVER={MySQL ODBC 5.1 Driver};DESC=;DATABASE=mbc;SERVER=memserver;UID=root;PASSWORD=3l3phant1;PORT=;OPTION=16;STMT=;" )
+CATCH
+
+endtry
+IF nConnectionHandle>0 &&connection good
+TRY
+SQLEXEC(nConnectionHandle,"select * from cust where schcode="+m.schcode+";","records")
+SQLEXEC(nConnectionHandle,"select * from invoiceinfo where schcode="+m.schcode+";","records")
+SELECT records
+IF RECCOUNT()>0
+	b=SQLEXEC(nConnectionHandle,'update invoiceinfo set schname="'+ALLTRIM(m.schname)+'",persinvamt='+ ALLTRIM(STR(m.persinvamt)) +',onlinecuto='+m.onlinecuto+  ',ponum="'+ m.ponum + '",invno='+ALLTRIM(STR(m.invno))+ ',basicinvamt='+ ALLTRIM(STR(m.basicinvamt))+ ',basiconly='+ ALLTRIM(STR(m.basiconly)) +' where schcode='+ m.schcode+';') &&',' ;
+
+ELSE
+	a=SQLEXEC(nConnectionHandle,'INSERT INTO mbc.invoiceinfo (schname,schcode,invno,onlinecuto,persinvamt,basicinvamt,basiconly,ponum) VALUES("'+m.schname+'","'+m.schcode+'",'+ALLTRIM(STR(m.invno))+','+m.onlinecuto +','+ ALLTRIM(STR(m.persinvamt))+','+ALLTRIM(STR(m.basicinvamt))+','+ALLTRIM(STR(m.basiconly))+',"'+m.ponum+'");')   
+*!*			
+endif
+SQLDISCONNECT(nConnectionHandle)
+CATCH
+
+endtry
+ENDIF
+SET DATE AMERICAN 
+FUNCTION TTMST(tDateTime)
+*———–*
+* Created : 06/21/07 09:10:11 AM
+* Author : Andrew Kimoto
+* Called by :
+* Purpose : Converts time to mysql date string.
+* Purpose :
+* :
+* Parameters: tDateTime = datetime variable to be processed
+* Notes :
+m.MySQLDateTimeTransForm = "'"+ allt(str(year(tDateTime))) + "/" + allt(str(month(tDateTime))) + "/" + allt(str(day(tDateTime)))+"'"
+return m.MySQLDateTimeTransForm
+ENDFUNC
