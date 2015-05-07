@@ -1,6 +1,6 @@
 *       *********************************************************
 *       *                                                         
-*       * 05/01/15            MOUSEMEN.MPR              11:17:52  
+*       * 05/06/2015           MOUSEMEN.MPR             12:00:20  
 *       *                                                         
 *       *********************************************************
 *       *                                                         
@@ -41,23 +41,23 @@ DEFINE BAR _med_paste OF shortcut PROMPT "\<Paste" ;
 DEFINE BAR _med_clear OF shortcut PROMPT "Cle\<ar" ;
 	MESSAGE "Removes the selection and does not place it onto the Clipboard"
 ON SELECTION BAR 1 OF shortcut ;
-	DO _4ca0o7r8w ;
+	DO _4cf0pqcpz ;
 	IN LOCFILE("\MBC5\SOURCE\MOUSEMEN" ,"MPX;MPR|FXP;PRG" ,"WHERE is MOUSEMEN?")
 ON SELECTION BAR 2 OF shortcut ;
-	DO _4ca0o7r8x ;
+	DO _4cf0pqcq0 ;
 	IN LOCFILE("\MBC5\SOURCE\MOUSEMEN" ,"MPX;MPR|FXP;PRG" ,"WHERE is MOUSEMEN?")
 ON SELECTION BAR 3 OF shortcut ;
-	DO _4ca0o7r8y ;
+	DO _4cf0pqcq1 ;
 	IN LOCFILE("\MBC5\SOURCE\MOUSEMEN" ,"MPX;MPR|FXP;PRG" ,"WHERE is MOUSEMEN?")
 ON SELECTION BAR 4 OF shortcut ;
-	DO _4ca0o7r8z ;
+	DO _4cf0pqcq2 ;
 	IN LOCFILE("\MBC5\SOURCE\MOUSEMEN" ,"MPX;MPR|FXP;PRG" ,"WHERE is MOUSEMEN?")
 
 ACTIVATE POPUP shortcut
 
 *       *********************************************************
 *       *                                                         
-*       * _4CA0O7R8W  ON SELECTION BAR 1 OF POPUP shortcut        
+*       * _4CF0PQCPZ  ON SELECTION BAR 1 OF POPUP shortcut        
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -68,13 +68,13 @@ ACTIVATE POPUP shortcut
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4ca0o7r8w
+PROCEDURE _4cf0pqcpz
 _screen.ActiveForm.nxtcontdate(7)
 
 
 *       *********************************************************
 *       *                                                         
-*       * _4CA0O7R8X  ON SELECTION BAR 2 OF POPUP shortcut        
+*       * _4CF0PQCQ0  ON SELECTION BAR 2 OF POPUP shortcut        
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -85,13 +85,13 @@ _screen.ActiveForm.nxtcontdate(7)
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4ca0o7r8x
+PROCEDURE _4cf0pqcq0
 _screen.ActiveForm.nxtcontdate(14)
 
 
 *       *********************************************************
 *       *                                                         
-*       * _4CA0O7R8Y  ON SELECTION BAR 3 OF POPUP shortcut        
+*       * _4CF0PQCQ1  ON SELECTION BAR 3 OF POPUP shortcut        
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -102,13 +102,13 @@ _screen.ActiveForm.nxtcontdate(14)
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4ca0o7r8y
+PROCEDURE _4cf0pqcq1
 _screen.ActiveForm.nxtcontdate(21)
 
 
 *       *********************************************************
 *       *                                                         
-*       * _4CA0O7R8Z  ON SELECTION BAR 4 OF POPUP shortcut        
+*       * _4CF0PQCQ2  ON SELECTION BAR 4 OF POPUP shortcut        
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -119,5 +119,5 @@ _screen.ActiveForm.nxtcontdate(21)
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _4ca0o7r8z
+PROCEDURE _4cf0pqcq2
 _screen.ActiveForm.nxtcontdate(28)
